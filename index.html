@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee & More | Brews, Bites & Warm Delights — Kamaraj Domestic Airport Chennai</title>
+  <meta name="description"
+    content="Your cozy pause before the skies at Kamaraj Domestic Airport Chennai (GST Road). Fresh artisanal coffee, warm gourmet sandwiches, oven bakes, and peaceful layover seating.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="theme-roasted-espresso">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <!-- Ambient Floating Steam & Coffee Beans Background Canvas -->
+  <canvas id="ambientCanvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       0. FLOATING TOP ANNOUNCEMENT BAR & GLOBAL STATUS
+       ========================================================================== -->
+  <aside class="announcement-bar" role="region" aria-label="Airport Announcements">
+    <div class="announcement-container">
+      <div class="live-ticker-wrap">
+        <span class="ticker-pulse-icon"><i class="fa-solid fa-plane-departure"></i> AIRPORT LIVE UPDATE:</span>
+        <div id="announcementTicker" class="ticker-content" aria-live="polite">
+          <span class="ticker-slide active">✈️ Flying out of Chennai? Recharge with freshly brewed coffee &amp; warm
+            bakes!</span>
+          <span class="ticker-slide">🕒 Open Daily: 6:00 AM – 10:00 PM at Kamaraj Domestic Airport</span>
+          <span class="ticker-slide">⚡ In a rush for boarding? Grab our express coffee &amp; sandwich to go in 3
+            mins!</span>
+          <span class="ticker-slide">✨ Great taste, great value — Cozy dining for two starting at ~₹350</span>
+        </div>
+      </div>
+      <div class="operational-badge">
+        <span class="status-dot"></span>
+        <span class="badge-text">Open Now | Serving Fresh Till 10:00 PM</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       1. NAVIGATION HEADER (STICKY / BLURRED GLASSMORPHISM)
+       ========================================================================== -->
+  <header id="mainHeader" class="glass-header">
+    <div class="header-container">
+      <!-- Logo & Wordmark -->
+      <a href="#hero" class="brand-logo" aria-label="Coffee & More Home">
+        <div class="logo-emblem">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span class="steam-ring"></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">Coffee &amp; More</span>
+          <span class="brand-tagline">Brews, Bites &amp; Warm Delights</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu Items -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#why-us" class="nav-link">Why Travelers Love Us</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Location &amp; Hours</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Micro-CTA Buttons -->
+      <div class="header-ctas">
+        <a href="#menu" class="btn btn-primary-glass">
+          <span>View Menu ☕</span>
+        </a>
+        <a href="https://maps.google.com/?q=Kamaraj+Domestic+Airport+Meenambakkam+Chennai" target="_blank"
+          rel="noopener noreferrer" class="btn btn-secondary-glass">
+          <span>Directions 📍</span>
+        </a>
+        <button id="mobileMenuBtn" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileNavMenu" class="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#why-us" class="mobile-nav-link">Why Travelers Love Us</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#location" class="mobile-nav-link">Location &amp; Hours</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#menu" class="btn btn-primary btn-block">Explore Full Menu 🥐</a>
+        <a href="https://maps.google.com/?q=Kamaraj+Domestic+Airport+Meenambakkam+Chennai" target="_blank"
+          rel="noopener noreferrer" class="btn btn-outline btn-block">Get Directions (Google Maps) 📍</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION (FULL-BLEED IMMERSIVE ANIMATED COFFEE CANVAS)
+         ========================================================================== -->
+    <section id="hero" class="hero-section hero-fullbleed">
+      <!-- Centered Full-Width Coffee Animation Video covering left to right corner -->
+      <div class="hero-video-backdrop">
+        <video 
+          id="coffeeScrollVideo" 
+          class="coffee-hero-video" 
+          src="coffee_animation.mp4" 
+          preload="auto" 
+          muted 
+          playsinline 
+          loop>
+          Your browser does not support HTML5 video.
+        </video>
+        <!-- Cinematic Dark Roast Vignette & Lighting Gradient -->
+        <div class="hero-video-vignette"></div>
+      </div>
+
+      <!-- Content Layer written directly ON TOP of the animated coffee video -->
+      <div class="hero-overlay-container">
+        <div class="hero-center-content">
+          <div class="hero-tag-badge animate-on-scroll">
+            <span class="sparkle-icon">✨</span>
+            <span>Kamaraj Domestic Airport • Meenambakkam, Chennai</span>
+          </div>
+
+          <h1 class="hero-headline animate-on-scroll">
+            Your Cozy Pause <br>
+            <span class="gradient-text-gold">Before the Skies.</span>
+          </h1>
+
+          <p class="hero-subheadline animate-on-scroll">
+            Freshly roasted coffee, oven-warm bakes, and gourmet sandwiches — crafted right at Chennai Domestic Airport to make every journey delicious.
+          </p>
+
+          <div class="hero-cta-group animate-on-scroll">
+            <a href="#menu" class="btn btn-primary-gold btn-lg hover-steam">
+              <span class="btn-text">Explore Our Menu 🥐</span>
+              <span class="steam-ripple"></span>
+            </a>
+            <a href="https://maps.google.com/?q=Kamaraj+Domestic+Airport+Meenambakkam+Chennai" target="_blank" rel="noopener noreferrer" class="btn btn-glass-dark btn-lg">
+              <span class="btn-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+              <span>Get Directions (Google Maps) 📍</span>
+            </a>
+          </div>
+
+          <!-- Hero Floating Micro-Cards directly overlaid on top of the animated coffee video -->
+          <div class="hero-badges-row animate-on-scroll">
+            <div class="micro-card-glass tilt-card" data-tilt>
+              <div class="card-icon-wrap">☕</div>
+              <div class="card-text">
+                <strong class="card-title">100% Freshly Ground</strong>
+                <span class="card-sub">Artisanal espresso &amp; brews</span>
+              </div>
+            </div>
+
+            <div class="micro-card-glass tilt-card" data-tilt>
+              <div class="card-icon-wrap">⏳</div>
+              <div class="card-text">
+                <strong class="card-title">Express Counter</strong>
+                <span class="card-sub">Ready before your gate opens</span>
+              </div>
+            </div>
+
+            <div class="micro-card-glass tilt-card" data-tilt>
+              <div class="card-icon-wrap">💰</div>
+              <div class="card-text">
+                <strong class="card-title">Pocket-Friendly Comfort</strong>
+                <span class="card-sub">Avg. spend ~₹350 for two</span>
+              </div>
+            </div>
+
+            <div class="micro-card-glass tilt-card" data-tilt>
+              <div class="card-icon-wrap">🌟</div>
+              <div class="card-text">
+                <strong class="card-title">4.8 / 5 Rating</strong>
+                <span class="card-sub">Loved by 10,000+ travelers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Cue Link at bottom of video -->
+        <a href="#why-us" class="scroll-cue-link scroll-cue-on-video" aria-label="Scroll to next section">
+          <span class="scroll-cue-text">Scroll to rotate &amp; experience the brew</span>
+          <div class="scroll-mouse-icon">
+            <span class="mouse-wheel"></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. VALUE PROPOSITION: "WHY STOP AT COFFEE & MORE?"
+         ========================================================================== -->
+    <section id="why-us" class="section why-us-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">WHY STOP AT COFFEE &amp; MORE?</span>
+          <h2 class="section-title">The Perfect Airport Companion</h2>
+          <p class="section-subtitle">Specially curated comfort designed to ease your transit stress and delight your
+            palate.</p>
+        </div>
+
+        <div class="cards-grid-4">
+          <!-- Card 1 -->
+          <article class="value-card animate-on-scroll">
+            <div class="value-icon-box">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+            <h3 class="value-card-headline">Freshly Brewed, Never Rushed</h3>
+            <h4 class="value-card-subheadline">Artisanal Coffee &amp; Teas</h4>
+            <p class="value-card-body">
+              Whether you need a rich double-shot espresso to catch a dawn flight or a calming ginger tea after landing,
+              our barista crafts each cup with care.
+            </p>
+            <div class="card-bottom-pill">Double-Shot Craft</div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="value-card animate-on-scroll">
+            <div class="value-icon-box">
+              <i class="fa-solid fa-bread-slice"></i>
+            </div>
+            <h3 class="value-card-headline">Freshly Baked Every Morning</h3>
+            <h4 class="value-card-subheadline">Oven-Warm Pastries &amp; Muffins</h4>
+            <p class="value-card-body">
+              Buttery croissants, melt-in-the-mouth blueberry muffins, and warm desserts baked to sweet perfection every
+              single day.
+            </p>
+            <div class="card-bottom-pill">Baked Daily at 6 AM</div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="value-card animate-on-scroll">
+            <div class="value-icon-box">
+              <i class="fa-solid fa-person-walking-luggage"></i>
+            </div>
+            <h3 class="value-card-headline">Made for the Modern Traveler</h3>
+            <h4 class="value-card-subheadline">Fast Grab &amp; Go or Relaxed Seating</h4>
+            <p class="value-card-body">
+              Tight layover? Pick up a sealed grab-and-go snack. Have spare time? Unwind in our cozy seating with handy
+              charging spots.
+            </p>
+            <div class="card-bottom-pill">Express Pick-up</div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="value-card animate-on-scroll">
+            <div class="value-icon-box">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <h3 class="value-card-headline">Honest Airport Value</h3>
+            <h4 class="value-card-subheadline">Premium Taste, Friendly Prices</h4>
+            <p class="value-card-body">
+              Airport dining without the sticker shock. Enjoy fulfilling snacks, sandwiches, and treats at a relaxed
+              budget (~₹350 for two).
+            </p>
+            <div class="card-bottom-pill">Avg. ~₹350 for Two</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. ABOUT US SECTION: "THE COFFEE & MORE STORY"
+         ========================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Story Copy -->
+          <div class="about-story-col animate-on-scroll">
+            <div class="badge-tag">
+              <i class="fa-solid fa-location-dot"></i> HELLO FROM MEENAMBAKKAM
+            </div>
+            <h2 class="about-title">The Warmest Stop at Kamaraj Domestic Airport</h2>
+
+            <div class="story-paragraphs">
+              <p>
+                Airports are full of rushed steps, gate announcements, and hurried goodbyes. At <strong>Coffee &amp;
+                  More</strong>, we built a sanctuary where travelers can press pause.
+              </p>
+              <p>
+                Located right inside the bustling Kamaraj Domestic Airport on GST Road, we bring together the aroma of
+                freshly ground coffee beans, the comforting warmth of toasted gourmet sandwiches, and a bakery counter
+                filled with fresh pastries and muffins.
+              </p>
+              <p>
+                Whether you're stepping off an early morning flight, waiting through a transit delay, or meeting loved
+                ones at arrivals, our welcoming corner offers a moment of pure comfort. Pull up a chair, plug in your
+                phone, take a deep sip, and let the travel rush fade away.
+              </p>
+            </div>
+
+            <div class="about-actions">
+              <a href="#menu" class="btn btn-primary">Check Today's Bakes 🧁</a>
+              <a href="#contact" class="btn btn-secondary">Crew &amp; Bulk Orders ✈️</a>
+            </div>
+          </div>
+
+          <!-- Interactive Milestone / Stat Counters -->
+          <div class="about-stats-col animate-on-scroll">
+            <div class="stats-card-board">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="stat-value" data-target-text="6:00 AM – 10:00 PM">6:00 AM – 10:00 PM</div>
+                <div class="stat-label">Open 7 Days a Week for Travelers</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="stat-value" data-counter="25" data-suffix="+">0+</div>
+                <div class="stat-label">Freshly Handcrafted Menu Selections</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-stopwatch-fast"></i></div>
+                <div class="stat-value" data-counter="3" data-suffix=" Mins">0 Mins</div>
+                <div class="stat-label">Average Counter Pick-up Speed</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-seedling"></i></div>
+                <div class="stat-value" data-counter="100" data-suffix="%">0%</div>
+                <div class="stat-label">Vegetarian &amp; Pure-Bake Options Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. INTERACTIVE MENU SECTION
+         ========================================================================== -->
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">CRAFTED FOR YOUR CRAVINGS</span>
+          <h2 class="section-title">Sip, Crunch &amp; Savor</h2>
+          <p class="section-subtitle">Fresh ingredients, balanced flavors, and vegetarian-friendly options prepared
+            fresh all day.</p>
+        </div>
+
+        <!-- Search & Filter Bar -->
+        <div class="menu-control-bar animate-on-scroll">
+          <div class="menu-search-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="menuSearchInput" placeholder="Search cappuccinos, sandwiches, muffins, chai..."
+              aria-label="Search menu items">
+            <button id="clearSearchBtn" class="clear-search-btn" title="Clear Search"
+              style="display: none;">&times;</button>
+          </div>
+          <div class="menu-dietary-badge">
+            <span class="veg-badge-pill">🟢 Veg Friendly</span>
+            <span class="spend-badge-pill">💰 Avg. ₹350 for two</span>
+          </div>
+        </div>
+
+        <!-- Interactive Category Tabs -->
+        <div class="category-tabs-scroll animate-on-scroll" role="tablist" aria-label="Menu Categories">
+          <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-border-all"></i> All
+          </button>
+          <button class="cat-tab" data-category="coffee" role="tab" aria-selected="false">
+            ☕ Coffee
+          </button>
+          <button class="cat-tab" data-category="teas" role="tab" aria-selected="false">
+            🍵 Teas &amp; Chai
+          </button>
+          <button class="cat-tab" data-category="sandwiches" role="tab" aria-selected="false">
+            🥪 Sandwiches
+          </button>
+          <button class="cat-tab" data-category="snacks" role="tab" aria-selected="false">
+            🥨 Savory Snacks
+          </button>
+          <button class="cat-tab" data-category="muffins" role="tab" aria-selected="false">
+            🧁 Muffins &amp; Pastries
+          </button>
+          <button class="cat-tab" data-category="desserts" role="tab" aria-selected="false">
+            🍰 Desserts
+          </button>
+          <button class="cat-tab" data-category="chilled" role="tab" aria-selected="false">
+            🥤 Cold Shakes &amp; Chillers
+          </button>
+        </div>
+
+        <!-- Menu Count & Active Filter Indicator -->
+        <div class="menu-status-bar">
+          <span id="menuCountDisplay">Showing all 25 handcrafted items</span>
+          <span class="price-note">All prices inclusive of airport taxes &bull; Freshly made to order</span>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div id="menuGrid" class="menu-grid">
+
+          <!-- CATEGORY 1: COFFEE -->
+          <div class="menu-card" data-category="coffee" data-name="Signature Airport Cappuccino"
+            data-tags="veg bestseller coffee">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag bestseller">Best Seller</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Signature Airport Cappuccino</h3>
+              <p class="item-desc">Velvety steamed milk poured over a rich double-shot espresso, finished with a dusted
+                cocoa crown.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Hot (Regular / Large)</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Signature Airport Cappuccino')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="coffee" data-name="Classic Americano"
+            data-tags="veg coffee americano bold">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Classic Americano</h3>
+              <p class="item-desc">Bold, smooth, and aromatic. Premium espresso pulled over hot water for pure coffee
+                lovers.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Hot / Iced</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Classic Americano')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="coffee" data-name="Café Latte" data-tags="veg coffee latte silky">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Café Latte</h3>
+              <p class="item-desc">Subtle espresso infused with silky microfoam milk. Mellow, smooth, and uplifting.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Hot</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Café Latte')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="coffee" data-name="Rich Hazelnut Café Mocha"
+            data-tags="veg coffee hazelnut mocha chocolate">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Rich Hazelnut Café Mocha</h3>
+              <p class="item-desc">Espresso blended with artisanal chocolate, roasted hazelnut notes, and whipped cream.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Hot / Iced</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Rich Hazelnut Café Mocha')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="coffee" data-name="Creamy Caramel Iced Frappé"
+            data-tags="veg coffee frappe caramel chilled bestseller">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag traveler-fav">Traveler Favorite</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Creamy Caramel Iced Frappé</h3>
+              <p class="item-desc">Blended chilled espresso, fresh milk, and caramel drizzle topped with whipped cream.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-glass-water"></i> Serving: Chilled Glass</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Creamy Caramel Iced Frappé')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 2: TEAS & CHAI -->
+          <div class="menu-card" data-category="teas" data-name="Masala Chai Special"
+            data-tags="veg tea chai masala ginger special">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag house-special">House Special</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Masala Chai Special</h3>
+              <p class="item-desc">Traditional Indian milk tea infused with crushed cardamom, ginger, cloves, and
+                cinnamon.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Piping Hot</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Masala Chai Special')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="teas" data-name="Green Tea & Lemon Honey Infusion"
+            data-tags="veg tea green lemon honey detox">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Green Tea &amp; Lemon Honey Infusion</h3>
+              <p class="item-desc">Antioxidant-rich whole leaf green tea with a squeeze of fresh lemon and raw honey.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Steamed Cup</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Green Tea & Lemon Honey Infusion')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="teas" data-name="Classic English Breakfast Tea"
+            data-tags="veg tea english breakfast black">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Classic English Breakfast Tea</h3>
+              <p class="item-desc">Full-bodied black tea brew served with warm milk and natural sugar on the side.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-mug-hot"></i> Serving: Hot</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Classic English Breakfast Tea')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 3: ARTISAN TOASTED SANDWICHES -->
+          <div class="menu-card" data-category="sandwiches" data-name="Garden Fresh Veggie & Cheese Grilled Sandwich"
+            data-tags="veg sandwich grilled cheese bell pepper top pick">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag top-pick">Top Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Garden Fresh Veggie &amp; Cheese Grilled Sandwich</h3>
+              <p class="item-desc">Crispy grilled bread layered with crisp bell peppers, English cucumber, sweet corn,
+                and melted mozzarella.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-plate-wheat"></i> Serving: With signature dip &amp;
+                  crisp wafers</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action"
+                onclick="openOrderModal('Garden Fresh Veggie & Cheese Grilled Sandwich')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="sandwiches" data-name="Spiced Paneer Tikka Panini"
+            data-tags="veg sandwich paneer tikka panini must try">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag must-try">Must Try</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Spiced Paneer Tikka Panini</h3>
+              <p class="item-desc">Marinated tender cottage cheese cubes tossed in tandoori spices and mint mayo,
+                pressed on artisan bread.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-fire-burner"></i> Serving: Warm &amp; Toasted</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Spiced Paneer Tikka Panini')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="sandwiches" data-name="Classic Herb Grilled Chicken Sandwich"
+            data-tags="non-veg sandwich chicken grilled herbs">
+            <div class="menu-card-header">
+              <div class="dietary-marker non-veg" title="Non-Vegetarian">🔴 Non-Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Classic Herb Grilled Chicken Sandwich</h3>
+              <p class="item-desc">Juicy shredded chicken breast seasoned with rosemary, garlic emulsion, and cheddar
+                cheese.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-fire-burner"></i> Serving: Golden Grilled</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action"
+                onclick="openOrderModal('Classic Herb Grilled Chicken Sandwich')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="sandwiches" data-name="Double Cheese & Corn Crunch Toastie"
+            data-tags="veg sandwich toastie cheese corn">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Double Cheese &amp; Corn Crunch Toastie</h3>
+              <p class="item-desc">Golden sweet corn and aged cheddar cheese toasted between buttery slices with herb
+                flakes.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-fire-burner"></i> Serving: Fresh off the grill</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action"
+                onclick="openOrderModal('Double Cheese & Corn Crunch Toastie')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 4: SAVORY QUICK BITES -->
+          <div class="menu-card" data-category="snacks" data-name="Golden Crispy Potato Wedges"
+            data-tags="veg snacks potato wedges crispy dip">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Golden Crispy Potato Wedges</h3>
+              <p class="item-desc">Lightly spiced potato wedges served piping hot with garlic mayo and tangy salsa dip.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-bowl-food"></i> Serving: Piping Hot Dip Basket</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Golden Crispy Potato Wedges')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="snacks" data-name="Herb-Crusted Paneer / Cheese Poppers"
+            data-tags="veg snacks paneer cheese poppers molten">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Herb-Crusted Paneer / Cheese Poppers</h3>
+              <p class="item-desc">Crunchy bite-sized poppers filled with molten spiced cheese that melts on first bite.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-bowl-food"></i> Serving: Crunchy Molten Basket</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action"
+                onclick="openOrderModal('Herb-Crusted Paneer / Cheese Poppers')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="snacks" data-name="Baked Veggie Puff Pastry"
+            data-tags="veg snacks puff pastry classic bakery">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Baked Veggie Puff Pastry</h3>
+              <p class="item-desc">Flaky golden puff pastry stuffed with spiced potato and vegetable filling. An airport
+                classic.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-bread-slice"></i> Serving: Flaky Oven Bake</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Baked Veggie Puff Pastry')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 5: BAKERY, FRESH MUFFINS & PASTRIES -->
+          <div class="menu-card" data-category="muffins" data-name="Blueberry Burst Muffin"
+            data-tags="veg muffins blueberry bakery freshly baked">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian Available">🟢 Veg Available</div>
+              <span class="item-tag freshly-baked">Freshly Baked</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Blueberry Burst Muffin</h3>
+              <p class="item-desc">Moist, soft vanilla sponge packed with tart wild blueberries and a delicate crumble
+                crust.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-cake-candles"></i> Serving: Freshly Oven Baked</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Blueberry Burst Muffin')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="muffins" data-name="Double Dark Chocolate Chip Muffin"
+            data-tags="veg muffins chocolate bakery dutch cocoa">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian Available">🟢 Veg Available</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Double Dark Chocolate Chip Muffin</h3>
+              <p class="item-desc">Decadent Dutch cocoa muffin packed with rich chocolate chunks that melt in your
+                mouth.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-cake-candles"></i> Serving: Rich &amp; Fudgy</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Double Dark Chocolate Chip Muffin')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="muffins" data-name="Golden Butter Croissant"
+            data-tags="veg pastry croissant butter flaky french">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Golden Butter Croissant</h3>
+              <p class="item-desc">Light, layered, and flaky French butter croissant toasted gently on request.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-bread-slice"></i> Serving: Toasted on Request</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Golden Butter Croissant')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="muffins" data-name="Cinnamon & Apple Swirl Danish"
+            data-tags="veg pastry cinnamon apple danish">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Cinnamon &amp; Apple Swirl Danish</h3>
+              <p class="item-desc">Golden puff pastry rolled with sweet spiced apple compote and warm cinnamon glaze.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-bread-slice"></i> Serving: Warm Glazed Swirl</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Cinnamon & Apple Swirl Danish')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 6: DECADENT DESSERTS -->
+          <div class="menu-card" data-category="desserts" data-name="Warm Walnut Choco Brownie"
+            data-tags="veg dessert brownie walnut bestseller chocolate">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+              <span class="item-tag bestseller">Bestseller</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Warm Walnut Choco Brownie</h3>
+              <p class="item-desc">Fudgy dark chocolate brownie topped with toasted walnuts. Served warm with chocolate
+                drizzle.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-ice-cream"></i> Serving: Warm with Chocolate
+                  Drizzle</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Warm Walnut Choco Brownie')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts" data-name="New York Style Cream Cheesecake"
+            data-tags="veg dessert cheesecake berry new york">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">New York Style Cream Cheesecake</h3>
+              <p class="item-desc">Smooth, velvety cream cheese on a crunchy graham cracker crust with berry glaze.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-cake-candles"></i> Serving: Chilled Slice</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('New York Style Cream Cheesecake')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="desserts" data-name="Chocolate Truffle Slice"
+            data-tags="veg dessert chocolate truffle ganache sponge">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Chocolate Truffle Slice</h3>
+              <p class="item-desc">Layers of moist dark sponge and silky chocolate ganache for true chocolate lovers.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-cake-candles"></i> Serving: Silky Layered Slice</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Chocolate Truffle Slice')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <!-- CATEGORY 7: CHILLED BEVERAGES & REFRESHERS -->
+          <div class="menu-card" data-category="chilled" data-name="Chilled Mango & Mint Cooler"
+            data-tags="veg chilled cooler mango mint refresher">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Chilled Mango &amp; Mint Cooler</h3>
+              <p class="item-desc">Fresh alphonso mango purée blended with crushed mint sprigs, lime zest, and sparkling
+                soda.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-glass-water"></i> Serving: Tall Chilled Glass</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Chilled Mango & Mint Cooler')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="chilled" data-name="Tangy Lime & Mint Mojito"
+            data-tags="veg chilled mojito lime mint non-alcoholic">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Tangy Lime &amp; Mint Mojito (Non-Alcoholic)</h3>
+              <p class="item-desc">Zesty lime wedges muddled with fragrant farm mint and fizzy soda over crushed ice.
+              </p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-glass-water"></i> Serving: Iced Cooler</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Tangy Lime & Mint Mojito')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="chilled" data-name="Creamy Oreo Cookie Milkshake"
+            data-tags="veg chilled milkshake oreo chocolate cookie">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Creamy Oreo Cookie Milkshake</h3>
+              <p class="item-desc">Thick whole milk blended with crushed Oreo cookies, rich vanilla gelato, and
+                chocolate sauce.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-glass-water"></i> Serving: Thick Shake with Cookie
+                  Crumbs</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Creamy Oreo Cookie Milkshake')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="chilled" data-name="Classic Cold Brew on Rocks"
+            data-tags="veg chilled cold brew coffee on rocks">
+            <div class="menu-card-header">
+              <div class="dietary-marker veg" title="Vegetarian">🟢 Veg</div>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="item-name">Classic Cold Brew on Rocks</h3>
+              <p class="item-desc">Steeped for 18 hours in cold filtered water for natural chocolate sweetness and zero
+                bitterness.</p>
+              <div class="item-meta">
+                <span class="serving-type"><i class="fa-solid fa-cubes-stacked"></i> Serving: 18-Hour Brew over Crystal
+                  Ice</span>
+              </div>
+            </div>
+            <div class="menu-card-footer">
+              <button class="btn btn-sm btn-item-action" onclick="openOrderModal('Classic Cold Brew on Rocks')">
+                <i class="fa-solid fa-circle-info"></i> Details &amp; Pairings
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dietary Advisory Banner -->
+        <div class="dietary-advisory-card animate-on-scroll">
+          <div class="advisory-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+          <div class="advisory-text">
+            <strong>Dietary &amp; Allergy Advisory Note:</strong>
+            <p>ℹ️ Note: Vegetarian items are clearly marked [🟢 Veg]. Please inform our barista/counter staff of any nut
+              or dairy allergies before placing your order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. TRAVELER HIGHLIGHTS & AMENITIES
+         ========================================================================== -->
+    <section class="section amenities-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">TRAVEL COMFORT &amp; CONVENIENCE</span>
+          <h2 class="section-title">Designed with Airport Travelers in Mind</h2>
+          <p class="section-subtitle">Thoughtful details engineered to turn stressful layovers into rejuvenating pauses.
+          </p>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-card animate-on-scroll">
+            <div class="amenity-icon-box">⚡</div>
+            <h3>High-Speed Charging Hubs</h3>
+            <p>Keep your devices at 100% before your flight with charging sockets at tables.</p>
+          </div>
+
+          <div class="amenity-card animate-on-scroll">
+            <div class="amenity-icon-box">🧳</div>
+            <h3>Luggage-Friendly Seating</h3>
+            <p>Wide walkways and ample space right by your chair for trolleys and backpacks.</p>
+          </div>
+
+          <div class="amenity-card animate-on-scroll">
+            <div class="amenity-icon-box">⏱️</div>
+            <h3>Express Flight Priority Counter</h3>
+            <p>Boarding within 15 minutes? Tell our cashier for instant priority packaging.</p>
+          </div>
+
+          <div class="amenity-card animate-on-scroll">
+            <div class="amenity-icon-box">🧾</div>
+            <h3>Spill-Proof Travel Packaging</h3>
+            <p>Specially designed leak-proof cups and food trays built for airport carrying.</p>
+          </div>
+
+          <div class="amenity-card animate-on-scroll">
+            <div class="amenity-icon-box">💳</div>
+            <h3>Frictionless Quick Billing</h3>
+            <p>Quick billing at the counter with UPI, all major cards, and cash.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. PHOTO GALLERY & VISUAL MOMENTS
+         ========================================================================== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">CAPTURING THE VIBE</span>
+          <h2 class="section-title">A Glimpse Inside Coffee &amp; More</h2>
+          <p class="section-subtitle">Everyday warmth, artisanal brewing, and peaceful airport moments.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item item-large animate-on-scroll" onclick="openLightbox('gallery-1')">
+            <div class="gallery-graphic barista-art">
+              <div class="graphic-layer">
+                <i class="fa-solid fa-mug-hot"></i>
+                <div class="liquid-steam"></div>
+              </div>
+            </div>
+            <div class="gallery-caption-overlay">
+              <span class="gallery-tag">#BaristaCraft</span>
+              <h4>The Barista Pour</h4>
+              <p>Fresh Espresso Pulled Daily</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item animate-on-scroll" onclick="openLightbox('gallery-2')">
+            <div class="gallery-graphic cozy-nook">
+              <div class="graphic-layer">
+                <i class="fa-solid fa-couch"></i>
+              </div>
+            </div>
+            <div class="gallery-caption-overlay">
+              <span class="gallery-tag">#UnwindBeforeFlying</span>
+              <h4>The Cozy Nook</h4>
+              <p>Comfortable Seating Away From Terminal Crowds</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item animate-on-scroll" onclick="openLightbox('gallery-3')">
+            <div class="gallery-graphic bakery-counter">
+              <div class="graphic-layer">
+                <i class="fa-solid fa-cookie-bite"></i>
+              </div>
+            </div>
+            <div class="gallery-caption-overlay">
+              <span class="gallery-tag">#BakeShop</span>
+              <h4>Freshly Baked Counter</h4>
+              <p>Warm Muffins, Croissants &amp; Pastries Every Morning</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item animate-on-scroll" onclick="openLightbox('gallery-4')">
+            <div class="gallery-graphic toastie-combo">
+              <div class="graphic-layer">
+                <i class="fa-solid fa-burger"></i>
+              </div>
+            </div>
+            <div class="gallery-caption-overlay">
+              <span class="gallery-tag">#TravelerFuel</span>
+              <h4>The Toastie Combo</h4>
+              <p>Golden Grilled Sandwiches &amp; Steaming Cappuccino</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item animate-on-scroll" onclick="openLightbox('gallery-5')">
+            <div class="gallery-graphic late-night">
+              <div class="graphic-layer">
+                <i class="fa-solid fa-moon"></i>
+              </div>
+            </div>
+            <div class="gallery-caption-overlay">
+              <span class="gallery-tag">#NightBites</span>
+              <h4>Late Night Warmth</h4>
+              <p>Welcoming Transit Lights till 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. TRAVELER REVIEWS & SOCIAL PROOF
+         ========================================================================== -->
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">COMMUNITY LOVE</span>
+          <h2 class="section-title">What Travelers Are Saying</h2>
+          <p class="section-subtitle">Rated <strong>4.8 / 5</strong> by passengers flying out of Chennai Domestic
+            Airport</p>
+        </div>
+
+        <div class="reviews-carousel-wrap">
+          <div class="reviews-slider" id="reviewsSlider">
+            <!-- Review 1 -->
+            <div class="review-card active-slide">
+              <div class="review-stars">⭐⭐⭐⭐⭐ <span>(5.0)</span></div>
+              <blockquote class="review-text">
+                "Coffee &amp; More is my designated pit-stop whenever I fly out of Chennai! The cappuccino is authentic
+                and piping hot, not like ordinary airport vending machines. The paneer sandwich was freshly made and
+                super filling. Total bill was under ₹350. Wonderful spot!"
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">PS</div>
+                <div class="reviewer-info">
+                  <strong>Priya S.</strong>
+                  <span>Frequent Flyer (Bengaluru – Chennai)</span>
+                </div>
+                <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Boarded 7:30 AM Flight</span>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐ <span>(5.0)</span></div>
+              <blockquote class="review-text">
+                "My flight had a 2-hour delay, and this cozy café made the wait painless. Found a charging point,
+                enjoyed a warm blueberry muffin and cold coffee, and worked peacefully. Courteous staff who genuinely
+                smile!"
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">KN</div>
+                <div class="reviewer-info">
+                  <strong>Karthik Narayanan</strong>
+                  <span>Tech Consultant</span>
+                </div>
+                <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Transit Passenger</span>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐ <span>(5.0)</span></div>
+              <blockquote class="review-text">
+                "Finding affordable and fresh food inside an airport is usually difficult, but Coffee &amp; More
+                surprised us. The grilled sandwich and choco brownie are top-notch. Clean counter and fast service!"
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">AD</div>
+                <div class="reviewer-info">
+                  <strong>Anita &amp; Rohan Desai</strong>
+                  <span>Vacationers</span>
+                </div>
+                <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Family Traveler</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-nav-bar">
+            <button id="prevReviewBtn" class="carousel-arrow" aria-label="Previous review">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="carouselDots">
+              <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+              <button class="dot" data-index="1" aria-label="Slide 2"></button>
+              <button class="dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+            <button id="nextReviewBtn" class="carousel-arrow" aria-label="Next review">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. LOCATION, TIMINGS & HOW TO FIND US
+         ========================================================================== -->
+    <section id="location" class="section location-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">FIND YOUR WAY TO US</span>
+          <h2 class="section-title">Conveniently Located at Kamaraj Domestic Airport</h2>
+          <p class="section-subtitle">Located comfortably for departing and arriving passengers along GST Road.</p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Address & Operational Details -->
+          <div class="location-details-col animate-on-scroll">
+            <div class="location-card">
+              <div class="loc-card-header">
+                <i class="fa-solid fa-location-dot loc-pin-icon"></i>
+                <div>
+                  <h3 class="loc-heading">Coffee &amp; More</h3>
+                  <span class="loc-terminal-tag">Kamaraj Domestic Airport, Chennai</span>
+                </div>
+              </div>
+
+              <div class="loc-address-block">
+                <strong>Address:</strong>
+                <p>
+                  Kamaraj Domestic Airport,<br>
+                  Grand Southern Trunk Road, Meenambakkam,<br>
+                  Pallavaram (Cantonment),<br>
+                  Tamil Nadu 600016, India.
+                </p>
+              </div>
+
+              <!-- Interactive Plus Code Card -->
+              <div class="plus-code-card">
+                <div class="code-info">
+                  <span class="code-label">Google Plus Code:</span>
+                  <strong id="plusCodeText" class="code-value">X5M8+9X Pallavaram (Contonment), Tamil Nadu</strong>
+                </div>
+                <button id="copyPlusCodeBtn" class="btn btn-sm btn-outline-caramel">
+                  <i class="fa-solid fa-copy"></i> <span id="copyBtnLabel">Copy Plus Code 📋</span>
+                </button>
+              </div>
+
+              <!-- Operating Hours Detail -->
+              <div class="hours-info-card">
+                <div class="hours-header">
+                  <i class="fa-solid fa-clock"></i>
+                  <strong>Operating Hours: Daily 6:00 AM – 10:00 PM</strong>
+                </div>
+                <p class="hours-sub">Open 7 Days a Week (including holidays; festival hours may slightly vary). Late
+                  evening travelers are warmly accommodated until 10:00 PM closing.</p>
+
+                <!-- Detailed Day Timings Dropdown -->
+                <details class="weekly-schedule-dropdown">
+                  <summary class="schedule-summary">View Full Day-by-Day Timings (Click to Expand)</summary>
+                  <ul class="schedule-list">
+                    <li><span>Monday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Tuesday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Wednesday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Thursday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Friday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Saturday</span> <span>6:00 AM – 10:00 PM</span></li>
+                    <li><span>Sunday (Holidays)</span> <span>6:00 AM – 10:00 PM (Hours might differ on Diwali)</span>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+
+              <div class="location-actions">
+                <a href="https://maps.google.com/?q=Kamaraj+Domestic+Airport+Meenambakkam+Chennai" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps 🗺️
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stylized Interactive Airport Terminal Map -->
+          <div class="location-map-col animate-on-scroll">
+            <div class="map-container-mockup">
+              <div class="map-header-bar">
+                <span class="mac-dot red"></span>
+                <span class="mac-dot yellow"></span>
+                <span class="mac-dot green"></span>
+                <span class="map-title-bar">Chennai Domestic Terminal Interactive Wayfinding</span>
+              </div>
+
+              <div class="interactive-map-visual">
+                <div class="runway-markings"></div>
+                <div class="terminal-building">
+                  <div class="terminal-roof">Kamaraj Domestic Terminal</div>
+                  <div class="terminal-gates">
+                    <span class="gate-pill">Gate 1-4</span>
+                    <span class="gate-pill">Security</span>
+                    <span class="gate-pill">Gate 5-9</span>
+                  </div>
+
+                  <!-- Hotspot Pin for Coffee & More -->
+                  <div class="cafe-hotspot">
+                    <div class="pulse-ring"></div>
+                    <div class="hotspot-pin">☕</div>
+                    <div class="hotspot-popup">
+                      <strong>Coffee &amp; More</strong>
+                      <span>Warm brews &amp; charging seats</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="road-artery">
+                  <span>Grand Southern Trunk Road (GST Road)</span>
+                </div>
+
+                <div class="map-overlay-guide">
+                  <span class="guide-pill">📍 Located comfortably for departing and arriving passengers along GST
+                    Road.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT, ENQUIRY & BULK ORDER SECTION
+         ========================================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-overline">DIRECT ASSISTANCE</span>
+          <h2 class="section-title">Have a Question or Need Flight Crew / Group Pre-Packaged Bites?</h2>
+          <p class="section-subtitle">Drop us a message for general queries, traveler feedback, or bulk parcel
+            inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col animate-on-scroll">
+            <div class="info-box-item">
+              <div class="info-icon"><i class="fa-solid fa-map-pin"></i></div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Kamaraj Domestic Airport, Meenambakkam, Chennai 600016</p>
+              </div>
+            </div>
+
+            <div class="info-box-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-content">
+                <h4>Operating Timings</h4>
+                <p>6:00 AM – 10:00 PM Daily</p>
+              </div>
+            </div>
+
+            <div class="info-box-item whatsapp-box">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="info-content">
+                <h4>Instant WhatsApp Connect</h4>
+                <p>Fast responses for transit questions or urgent orders.</p>
+                <a href="https://wa.me/?text=Hi%20Coffee%20%26%20More%2C%20I%20have%20an%20inquiry%20about%20my%20upcoming%20airport%20visit."
+                  target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i> Chat with Us on WhatsApp 💬
+                </a>
+              </div>
+            </div>
+
+            <div class="spend-assurance-box">
+              <i class="fa-solid fa-tag"></i>
+              <div>
+                <strong>Budget-Friendly Airport Dining</strong>
+                <p>Average spend ~₹350 for two. Freshly prepared, zero price gouging.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form Column -->
+          <div class="contact-form-col animate-on-scroll">
+            <form id="contactForm" class="contact-card-form" novalidate>
+              <h3 class="form-title">Send a Traveler Message</h3>
+              <p class="form-subtitle">We review and respond promptly to make your journey smoother.</p>
+
+              <div class="form-group">
+                <label for="fullName">Your Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g., Arvind Kumar"
+                  required>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="mobileNumber">Mobile Number / WhatsApp <span class="req">*</span></label>
+                  <input type="tel" id="mobileNumber" name="mobileNumber" class="form-input"
+                    placeholder="+91 98765 43210" required>
+                  <span class="field-error" id="mobileError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress">Email Address <span class="req">*</span></label>
+                  <input type="email" id="emailAddress" name="emailAddress" class="form-input"
+                    placeholder="you@example.com" required>
+                  <span class="field-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryReason">Reason for Inquiry <span class="req">*</span></label>
+                <select id="inquiryReason" name="inquiryReason" class="form-select" required>
+                  <option value="" disabled selected>Select reason...</option>
+                  <option value="general">General Inquiry / Feedback</option>
+                  <option value="crew-bulk">Flight Crew / Bulk Snack Pre-Order</option>
+                  <option value="dietary">Special Dietary Requirements</option>
+                  <option value="other">Other Queries</option>
+                </select>
+                <span class="field-error" id="reasonError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="messageText">Your Message <span class="req">*</span></label>
+                <textarea id="messageText" name="messageText" class="form-textarea" rows="4"
+                  placeholder="Tell us how we can help you make your travel smoother..." required></textarea>
+                <span class="field-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-block btn-lg">
+                <span class="btn-text">Send Message ✈️</span>
+                <span class="spinner-loader" style="display: none;"></span>
+              </button>
+
+              <!-- Instant Feedback Confirmation Message -->
+              <div id="formSuccessAlert" class="form-alert-success" style="display: none;" role="alert">
+                <div class="alert-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="alert-text">
+                  <strong>Message Sent Successfully!</strong>
+                  <p>Thank you for reaching out! Our team at the airport counter will respond shortly.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. MOBILE BOTTOM STICKY ACTION DOCK
+       ========================================================================== -->
+  <aside class="mobile-action-dock" role="navigation" aria-label="Quick Mobile Actions">
+    <a href="#menu" class="dock-btn">
+      <i class="fa-solid fa-book-open"></i>
+      <span>📖 View Menu</span>
+    </a>
+    <a href="https://maps.google.com/?q=Kamaraj+Domestic+Airport+Meenambakkam+Chennai" target="_blank"
+      rel="noopener noreferrer" class="dock-btn dock-btn-highlight">
+      <i class="fa-solid fa-location-arrow"></i>
+      <span>📍 Get Directions</span>
+    </a>
+    <a href="https://wa.me/?text=Hi%20Coffee%20%26%20More%2C%20I%20have%20an%20inquiry%20about%20my%20upcoming%20airport%20visit."
+      target="_blank" rel="noopener noreferrer" class="dock-btn">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>💬 WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       12. FOOTER SECTION
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <!-- Brand Column -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h3>Coffee &amp; More</h3>
+        </div>
+        <p class="footer-tagline">"Brews, Bites &amp; Warm Delights at Chennai Domestic Airport."</p>
+        <p class="footer-note">
+          The perfect companion for every flight. Freshly brewed coffee, grilled snacks, and oven bakes served with
+          warmth from 6:00 AM to 10:00 PM.
+        </p>
+      </div>
+
+      <!-- Quick Navigation Links -->
+      <div class="footer-col links-col">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-link-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Full Menu &amp; Pricing</a></li>
+          <li><a href="#why-us">Why Travelers Love Us</a></li>
+          <li><a href="#gallery">Visual Moments</a></li>
+          <li><a href="#location">Airport Directions</a></li>
+          <li><a href="#contact">Contact &amp; Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Airport Traveler Quick Info -->
+      <div class="footer-col traveler-col">
+        <h4>Airport Traveler Quick Info</h4>
+        <ul class="footer-info-list">
+          <li>
+            <i class="fa-solid fa-map-pin"></i>
+            <span><strong>Location:</strong> Kamaraj Domestic Airport, Meenambakkam, Pallavaram, Chennai - 600016</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span><strong>Hours:</strong> Daily 6:00 AM – 10:00 PM</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-wallet"></i>
+            <span><strong>Spend Range:</strong> Approx. ₹350 for two (Budget &amp; traveler-friendly)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span><strong>Plus Code:</strong> X5M8+9X</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom-bar">
+      <div class="container bottom-bar-container">
+        <p class="copyright">&copy; 2026 Coffee &amp; More. All rights reserved.</p>
+        <p class="friendly-reminder">Safe travels &amp; enjoy your flight! 🛫</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Pop-up Modal for Gallery -->
+  <div id="galleryLightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Preview">
+    <div class="lightbox-content">
+      <button id="closeLightboxBtn" class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <div class="lightbox-stage">
+        <div id="lightboxVisual" class="lightbox-graphic-preview"></div>
+        <div class="lightbox-caption">
+          <span id="lightboxTag" class="tag"></span>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item Details / Pairing Modal -->
+  <div id="itemModal" class="item-modal" aria-hidden="true" role="dialog" aria-label="Item Details">
+    <div class="item-modal-content">
+      <button id="closeItemModalBtn" class="item-modal-close" aria-label="Close item details">&times;</button>
+      <div class="modal-body-pad">
+        <div class="item-badge-header">
+          <span id="modalDietary" class="dietary-marker veg">🟢 Veg</span>
+          <span id="modalTag" class="item-tag bestseller">Chef Recommendation</span>
+        </div>
+        <h3 id="modalTitle" class="modal-item-title">Item Title</h3>
+        <p id="modalDesc" class="modal-item-desc">Item Description</p>
+        <div class="modal-travel-tip">
+          <i class="fa-solid fa-mug-saucer"></i>
+          <div>
+            <strong>Pairing Suggestion:</strong>
+            <p id="modalPairing">Pairs deliciously with our Golden Butter Croissant or Masala Chai Special!</p>
+          </div>
+        </div>
+        <div class="modal-pickup-badge">
+          <i class="fa-solid fa-stopwatch"></i> Express Counter Prep: Ready in 3 Minutes for Boarding!
+        </div>
+        <button class="btn btn-primary btn-block" onclick="closeItemModal()">Got It, View More Items ☕</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

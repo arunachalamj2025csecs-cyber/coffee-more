@@ -1,0 +1,2264 @@
+# MASTER WEBSITE DESIGN PROMPT – AR COFFEE SHOP
+
+## 1. PROJECT OVERVIEW
+
+Act as a senior UI/UX designer, professional website content writer, brand designer and full-stack web application architect.
+
+Design and develop a complete, modern, premium coffee shop website for a brand named **AR Coffee Shop**.
+
+The website must have two completely separate but interconnected portals:
+
+1. Customer Portal – For customers to explore the coffee shop, browse products, place orders, track orders, access offers and submit reviews.
+2. Owner Portal – For the shop owner to manage products, categories, orders, customers, offers, reviews, sales analytics and business settings.
+
+Both portals must share the same backend and database.
+
+The website should look like a premium specialty coffee brand rather than a generic restaurant ordering template.
+
+## 2. BUSINESS INFORMATION
+
+- Business Name: AR Coffee Shop
+- Business Model: Single physical coffee shop
+- Currency: USD ($)
+- Business Type: Coffee Shop / Café
+- Design Style: Modern, Premium, Minimalist and Elegant
+- Ordering Methods: Dine-in and Takeaway / Pickup
+- Payment Methods: UPI, Credit/Debit Cards and Cash
+- Customer Authentication: Email and Password
+- Owner Authentication: Secure Owner Login
+- Menu Management: Fully Dynamic
+- Customer Order Tracking: Enabled
+- Offers and Discounts: Enabled
+- Customer Reviews and Ratings: Enabled
+
+Important:
+The owner must be able to add, edit, delete, hide, update prices and manage the availability of all menu items through the Owner Portal. Never hardcode the menu into the customer interface.
+
+Currency and payment processing must be configured separately. UPI is generally an INR-based payment method, so ensure that the payment gateway supports the actual transaction currency. Do not assume UPI supports USD settlement.
+
+---
+
+# 3. BRAND IDENTITY AND DESIGN SYSTEM
+
+## Brand Name
+AR Coffee Shop
+
+## Tagline
+"Every Cup Has a Story. Make Yours Special."
+
+## Brand Description
+
+AR Coffee Shop is a modern coffee destination created for people who appreciate great coffee, delicious refreshments and memorable moments.
+
+From freshly prepared espresso and creamy cappuccinos to refreshing cold coffees and delicious snacks, every item is designed to provide a satisfying experience.
+
+Whether customers want to enjoy a peaceful dine-in experience or quickly collect their favourite coffee, AR Coffee Shop makes every visit special.
+
+## Brand Personality
+
+- Premium
+- Elegant
+- Warm
+- Welcoming
+- Modern
+- Customer-focused
+
+## Colour Palette
+
+Use the following colour system consistently across both portals.
+
+- Espresso Brown: #3B241B
+- Coffee Beige: #E8D8C3
+- Warm Cream: #FAF7F2
+- Caramel Gold: #C58B45
+- Dark Charcoal: #292522
+- White: #FFFFFF
+- Soft Grey: #F1EFEB
+
+Use espresso brown for primary buttons, navigation highlights and important branding elements.
+
+Use warm cream for backgrounds.
+
+Use caramel gold for premium accents and special offers.
+
+## Typography
+
+- Main Headings: Playfair Display
+- Body Text: Inter
+- Buttons: Inter Medium/Semibold
+- Product Titles: Inter Semibold
+
+Maintain a consistent typography hierarchy.
+
+## Design Guidelines
+
+- Premium editorial-style layouts.
+- Large, high-quality coffee photography.
+- Elegant whitespace.
+- Rounded product cards.
+- Subtle shadows.
+- Smooth transitions.
+- Consistent spacing.
+- Clear navigation.
+- Professional icons.
+- Responsive layouts.
+- Accessible colour contrast.
+- Beautiful empty states and loading states.
+
+Avoid excessive animations, unnecessary gradients, cluttered layouts and generic template designs.
+
+---
+
+# PART A – CUSTOMER PORTAL
+
+## 4. CUSTOMER PORTAL OVERVIEW
+
+Create a beautiful, responsive customer-facing website.
+
+The customer should be able to:
+
+- Visit the homepage.
+- Explore the coffee shop.
+- Browse the complete menu.
+- Search and filter products.
+- View detailed product information.
+- Customise products where applicable.
+- Add products to the cart.
+- Apply discount coupons.
+- Select dine-in or takeaway.
+- Complete checkout.
+- Select an available payment method.
+- View order confirmation.
+- Track order status.
+- View previous orders.
+- Submit ratings and reviews.
+- Manage their profile.
+- View available offers.
+
+The customer portal must have a modern navigation bar and a professional footer.
+
+## 5. CUSTOMER HOME PAGE
+
+### Navigation Bar
+
+Display:
+
+- AR Coffee Shop Logo
+- Home
+- Our Menu
+- Offers
+- About Us
+- Contact
+- Login / Sign Up
+- Shopping Cart Icon
+
+Make the navigation responsive with a mobile menu.
+
+### Hero Section
+
+Main Heading:
+
+"Discover the Art of Perfect Coffee."
+
+Subheading:
+
+"Freshly brewed coffee, delicious flavours, and unforgettable moments. Explore our handcrafted coffee collection and discover your new favourite cup at AR Coffee Shop."
+
+Primary Button:
+"Explore Our Menu"
+
+Secondary Button:
+"Order Your Coffee"
+
+Supporting Text:
+
+"Your favourite coffee is just a few clicks away."
+
+Use a premium coffee image with warm lighting, rich coffee tones and an elegant café atmosphere.
+
+### Welcome Section
+
+Heading:
+
+"More Than Coffee. It's an Experience."
+
+Description:
+
+"At AR Coffee Shop, every cup is prepared with passion and attention to detail. We bring together carefully selected ingredients, rich flavours and a welcoming atmosphere to create something special.
+
+Whether you love a strong espresso, a smooth latte or a refreshing cold coffee, we have something to make your day better."
+
+### Featured Products Section
+
+Heading:
+
+"Our Customer Favourites"
+
+Subtitle:
+
+"Discover the drinks and treats our customers love the most. From timeless classics to refreshing favourites, there's always something worth trying."
+
+Display dynamic product cards with:
+
+- Product Image
+- Product Name
+- Description
+- Price
+- Rating
+- Availability
+- Add to Cart
+- View Details
+
+Fetch products dynamically from the database.
+
+Show only active and customer-visible products.
+
+### Why Choose Us Section
+
+Heading:
+
+"The AR Coffee Experience"
+
+Card 1 – Freshly Prepared
+
+"Every order is prepared with care to give you a fresh and satisfying coffee experience."
+
+Card 2 – Quality Ingredients
+
+"We focus on quality ingredients and balanced flavours to make every cup enjoyable."
+
+Card 3 – Easy Online Ordering
+
+"Browse our menu, choose your favourites and place your order without unnecessary steps."
+
+Card 4 – Made for Your Moments
+
+"Whether it's a morning coffee, an afternoon break or time with friends, we make every visit special."
+
+### How It Works Section
+
+Heading:
+
+"Your Favourite Coffee in Three Simple Steps"
+
+Step 1 – Explore
+
+"Browse our menu and discover your favourite drinks and snacks."
+
+Step 2 – Order
+
+"Add your selections to the cart and choose dine-in or takeaway."
+
+Step 3 – Enjoy
+
+"Follow your order status and enjoy your freshly prepared coffee."
+
+### Offers Section
+
+Heading:
+
+"A Little More Happiness in Every Order"
+
+Description:
+
+"Good coffee deserves great moments. Explore our latest offers, exclusive discounts and special promotions available at AR Coffee Shop."
+
+Button: "Explore Offers"
+
+Display active offers dynamically from the owner portal.
+
+### Customer Testimonials
+
+Heading:
+
+"What Our Customers Say"
+
+Subtitle:
+
+"Your experiences make us better. Discover what customers have to say about their favourite moments at AR Coffee Shop."
+
+Sample review content:
+
+"A wonderful place to enjoy a peaceful coffee break. The atmosphere is beautiful, and the coffee tastes amazing."
+
+"Ordering online was quick and convenient. My coffee was ready when I arrived."
+
+"Great coffee, friendly service and a comfortable atmosphere. Definitely worth visiting again."
+
+Display actual approved customer reviews dynamically.
+
+### Final CTA
+
+Heading:
+
+"Your Perfect Cup Is Waiting."
+
+Description:
+
+"Take a break from your busy day and enjoy something special. Explore our menu, find your favourite flavour and let AR Coffee Shop make your moment better."
+
+Button: "Order Now"
+
+### Footer
+
+Include:
+
+- AR Coffee Shop Logo
+- Brand Tagline
+- Quick Links
+- Menu
+- Offers
+- About Us
+- Contact
+- FAQs
+- Order Tracking
+- Privacy Policy
+- Terms and Conditions
+- Social Media Links
+- Business Contact Information
+- Copyright Information
+
+Copyright:
+
+"© 2026 AR Coffee Shop. All Rights Reserved."
+
+---
+
+## 6. MENU PAGE
+
+Page Heading:
+
+"Explore Our Menu"
+
+Description:
+
+"Every great coffee experience starts with the right choice. Explore our carefully curated selection of hot coffees, cold beverages and delicious bites. Find the flavour you love and order your favourite anytime."
+
+### Dynamic Menu Categories
+
+Create the following initial sample categories:
+
+1. Hot Coffee
+2. Cold Coffee
+3. Speciality Coffee
+4. Tea & Refreshments
+5. Snacks & Bites
+6. Desserts
+
+The owner must be able to create, edit, delete and reorder categories.
+
+### Sample Products
+
+Use these as sample starting products only.
+
+Product 1:
+Classic Cappuccino
+
+Description:
+"Rich espresso blended with steamed milk and topped with smooth milk foam."
+
+Sample Price: $4.50
+
+Product 2:
+Iced Caramel Latte
+
+Description:
+"A refreshing combination of chilled espresso, creamy milk and caramel sweetness."
+
+Sample Price: $5.50
+
+Product 3:
+Classic Espresso
+
+Description:
+"A bold and concentrated coffee shot with a rich aroma and intense flavour."
+
+Sample Price: $3.00
+
+Product 4:
+Chocolate Brownie
+
+Description:
+"A soft, rich chocolate dessert perfect for pairing with your favourite coffee."
+
+Sample Price: $3.00
+
+Product 5:
+Vanilla Latte
+
+Description:
+"Smooth espresso combined with creamy steamed milk and a delicate touch of vanilla."
+
+Sample Price: $5.00
+
+Product 6:
+Mocha Delight
+
+Description:
+"A delicious combination of espresso, chocolate and creamy milk."
+
+Sample Price: $5.50
+
+Product 7:
+Cold Brew Coffee
+
+Description:
+"Slow-steeped coffee served chilled for a smooth and refreshing experience."
+
+Sample Price: $4.75
+
+Product 8:
+Butter Croissant
+
+Description:
+"A golden, flaky pastry with a buttery texture, perfect alongside your coffee."
+
+Sample Price: $3.50
+
+All sample prices are editable.
+
+### Product Filters
+
+- All Items
+- Hot Coffee
+- Cold Coffee
+- Speciality Coffee
+- Snacks
+- Desserts
+- Price: Low to High
+- Price: High to Low
+- Highest Rated
+- Available Items Only
+
+Search Placeholder:
+
+"Search for your favourite coffee or snack..."
+
+### Product Card
+
+Each card must contain:
+
+- Product Image
+- Product Name
+- Short Description
+- Price
+- Rating
+- Availability
+- Add to Cart Button
+- View Details Button
+
+Unavailable products must display a clear "Sold Out" label and cannot be added to the cart.
+
+---
+
+## 7. PRODUCT DETAILS PAGE
+
+Sample Heading:
+
+"Classic Cappuccino"
+
+Description:
+
+"Experience the perfect balance of rich espresso and creamy steamed milk. Finished with a smooth layer of milk foam, our Classic Cappuccino is a timeless favourite for anyone who appreciates the true taste of coffee."
+
+Display:
+
+- Large Product Image
+- Product Name
+- Full Description
+- Price
+- Rating
+- Ingredients
+- Availability
+- Preparation Information
+
+### Product Customisation
+
+Heading:
+
+"Make It Your Own"
+
+Where supported by the product, offer:
+
+- Size: Small / Medium / Large
+- Temperature: Hot / Iced
+- Sugar: Regular / Less Sugar / No Sugar
+- Extras: Extra Shot / Extra Cream / Flavour Syrup
+
+Quantity Selector:
+
+- Minus
+- Quantity
+- Plus
+
+Primary Button:
+
+"Add to Cart"
+
+Supporting Text:
+
+"Your coffee, your way. Choose the options you love before placing your order."
+
+### Related Products
+
+Heading:
+
+"You May Also Love"
+
+Display similar products from the same or related categories.
+
+---
+
+## 8. OFFERS AND DISCOUNTS PAGE
+
+Heading:
+
+"Special Offers, Extra Reasons to Smile."
+
+Description:
+
+"Enjoy more of what you love with exclusive AR Coffee Shop offers. Discover seasonal promotions, special discounts and exciting deals created to make your coffee experience even better."
+
+Create dynamic offer cards.
+
+Sample offers:
+
+Coffee Break Special:
+
+"Enjoy a special discount on selected coffee beverages. The perfect excuse to take a break and enjoy your favourite cup."
+
+Combo Delight:
+
+"Pair your favourite coffee with a delicious snack and enjoy a specially priced combination."
+
+Weekend Treat:
+
+"Make your weekends more enjoyable with selected offers available for a limited time."
+
+Each offer should display:
+
+- Banner Image
+- Offer Title
+- Description
+- Discount
+- Coupon Code
+- Validity Period
+- Terms and Conditions
+- Apply Offer Button
+
+Only active and valid offers should be displayed.
+
+---
+
+## 9. CART PAGE
+
+Heading:
+
+"Your Coffee Cart"
+
+Description:
+
+"Your favourites are almost ready! Review your selected items, make any necessary changes and proceed to checkout when you're ready."
+
+Display each cart item with:
+
+- Product Image
+- Product Name
+- Customisations
+- Unit Price
+- Quantity Selector
+- Item Total
+- Remove Button
+
+### Coupon Section
+
+Heading:
+
+"Have a Promo Code?"
+
+Placeholder:
+
+"Enter your coupon code"
+
+Button:
+
+"Apply Coupon"
+
+### Order Summary
+
+Display:
+
+- Subtotal
+- Discount
+- Taxes
+- Final Total
+
+Calculate all values dynamically.
+
+Button:
+
+"Proceed to Checkout"
+
+Secondary Button:
+
+"Continue Shopping"
+
+Empty Cart Message:
+
+"Your cart is waiting for something delicious. Explore our menu, discover your favourites and add something special to your next coffee break."
+
+Button:
+
+"Explore Menu"
+
+---
+
+## 10. CHECKOUT PAGE
+
+Heading:
+
+"Complete Your Order"
+
+Description:
+
+"You're just one step away from enjoying your favourite coffee. Review your order details, select how you'd like to enjoy your purchase and confirm your order."
+
+### Customer Information
+
+Fields:
+
+- Full Name
+- Email Address
+- Mobile Number
+
+Automatically populate these fields for logged-in customers.
+
+### Order Type
+
+Heading:
+
+"How Would You Like to Enjoy Your Order?"
+
+Option 1 – Dine-in
+
+"Enjoy your coffee in the comfortable atmosphere of AR Coffee Shop. Choose dine-in and we'll prepare your order for you to enjoy at our café."
+
+Option 2 – Takeaway / Pickup
+
+"Short on time? Place your order online and collect it from our coffee shop when it's ready."
+
+For dine-in, optionally support a table number.
+
+For pickup, show collection instructions.
+
+### Payment Methods
+
+Display the configured and supported payment options:
+
+- UPI
+- Credit / Debit Card
+- Cash at Counter
+- Cash on Pickup
+
+Only display payment methods enabled by the owner.
+
+Show appropriate payment instructions.
+
+### Order Summary
+
+Display:
+
+- Products
+- Quantities
+- Customisations
+- Subtotal
+- Discounts
+- Taxes
+- Final Total
+
+Button:
+
+"Place Order"
+
+Supporting Text:
+
+"Please review your details before confirming. Once your order is placed, you'll be able to follow its progress through your account."
+
+---
+
+## 11. ORDER CONFIRMATION AND TRACKING PAGE
+
+Confirmation Heading:
+
+"Your Order Is Confirmed!"
+
+Description:
+
+"Thank you for choosing AR Coffee Shop. We've received your order and our team will start preparing it shortly. Sit back, relax and follow your order progress right here."
+
+Display:
+
+- Order ID
+- Order Date
+- Order Type
+- Items Ordered
+- Total Amount
+- Payment Status
+
+### Order Timeline
+
+1. Order Placed
+"Your order has been successfully received by AR Coffee Shop."
+
+2. Order Accepted
+"Our team has reviewed and accepted your order."
+
+3. Preparing Your Order
+"Your coffee and selected items are being freshly prepared."
+
+4. Ready for Pickup / Served
+"Your order is ready. Collect it at the counter or enjoy it at your table."
+
+5. Completed
+"Your order has been successfully completed. We hope you enjoyed it!"
+
+The timeline must update based on the actual status set by the owner.
+
+For dine-in and takeaway orders, use suitable final status labels.
+
+Buttons:
+
+- Track My Order
+- View Order Details
+- Back to Home
+
+---
+
+## 12. MY ORDERS PAGE
+
+Heading:
+
+"Your Coffee Journey"
+
+Description:
+
+"Keep all your AR Coffee Shop orders in one place. View your previous purchases, check current order progress and quickly reorder the items you enjoyed."
+
+Filters:
+
+- All Orders
+- Active Orders
+- Completed Orders
+- Cancelled Orders
+
+Each order card should contain:
+
+- Order ID
+- Order Date
+- Products
+- Quantity
+- Total Price
+- Order Type
+- Order Status
+- View Details
+- Track Order
+- Reorder
+
+Empty State:
+
+"No orders yet! Your next favourite coffee experience is waiting. Explore our menu and place your first order."
+
+---
+
+## 13. CUSTOMER REVIEWS AND RATINGS PAGE
+
+Heading:
+
+"Your Experience Matters to Us."
+
+Description:
+
+"At AR Coffee Shop, customer satisfaction is at the heart of everything we do. Your feedback helps us understand what you love and where we can improve. Share your experience and help other coffee lovers discover their favourites."
+
+### Review Form
+
+Heading:
+
+"How Was Your Coffee Experience?"
+
+Fields:
+
+- Select Eligible Completed Order
+- Select Product (Optional)
+- Star Rating: 1–5
+- Review Title
+- Written Review
+
+Placeholder:
+
+"Tell us what you enjoyed about your coffee, the service or your overall experience..."
+
+Button:
+
+"Submit Review"
+
+Display approved customer reviews dynamically.
+
+---
+
+## 14. ABOUT US PAGE
+
+Heading:
+
+"A Passion for Coffee. A Place for Everyone."
+
+Our Story:
+
+"AR Coffee Shop was created with a simple idea: to make every coffee moment special. We believe that a great cup of coffee can brighten your morning, bring people together and turn an ordinary day into something memorable.
+
+Our goal is to provide a welcoming place where customers can enjoy quality beverages, delicious food and friendly service. Whether you're visiting us for a quick coffee or spending time with friends, we want every experience to feel special.
+
+At AR Coffee Shop, we don't just serve coffee. We create moments worth coming back for."
+
+### Our Mission
+
+"To serve enjoyable coffee and delicious refreshments while creating a comfortable and welcoming experience for every customer."
+
+### Our Vision
+
+"To become a trusted and loved coffee destination, known for quality, consistency and memorable customer experiences."
+
+### Our Values
+
+Quality:
+"We focus on providing satisfying products and consistent experiences."
+
+Passion:
+"We believe in putting care into every cup we serve."
+
+Hospitality:
+"Every customer deserves a friendly and welcoming experience."
+
+Innovation:
+"We continuously explore ways to improve our menu and services."
+
+Final CTA:
+
+"Come for the Coffee. Stay for the Moments."
+
+Button:
+
+"Explore Our Menu"
+
+---
+
+## 15. CONTACT US PAGE
+
+Heading:
+
+"We'd Love to Hear From You."
+
+Description:
+
+"Have a question about our menu, an existing order or an upcoming visit? Our team is here to help. Reach out to AR Coffee Shop and we'll do our best to make your experience smooth and enjoyable."
+
+### Business Information
+
+- Shop Address: Configurable by owner
+- Phone Number: Configurable by owner
+- Email: Configurable by owner
+- Working Hours: Configurable by owner
+- Map Location: Configurable by owner
+
+Do not invent actual business details.
+
+### Contact Form
+
+Heading:
+
+"Send Us a Message"
+
+Fields:
+
+- Full Name
+- Email Address
+- Mobile Number
+- Subject
+- Message
+
+Placeholder:
+
+"Tell us how we can help. Whether it's a question, suggestion or feedback, we'd be happy to hear from you."
+
+Button:
+
+"Send Message"
+
+Include a map showing the actual shop location once configured.
+
+---
+
+## 16. LOGIN AND REGISTRATION PAGES
+
+### Customer Login
+
+Heading:
+
+"Welcome Back to AR Coffee Shop."
+
+Description:
+
+"Your favourite coffee experiences are just a step away. Sign in to explore the menu, manage your orders and enjoy the convenience of ordering online."
+
+Fields:
+
+- Email Address
+- Password
+- Remember Me
+- Forgot Password
+
+Button:
+
+"Sign In"
+
+Supporting Text:
+
+"New to AR Coffee Shop? Create an account and start exploring."
+
+### Customer Registration
+
+Heading:
+
+"Join the AR Coffee Community."
+
+Description:
+
+"Create your account to enjoy a smoother ordering experience. Save your details, follow your orders, discover special offers and keep track of your favourite coffee moments."
+
+Fields:
+
+- Full Name
+- Email Address
+- Mobile Number
+- Password
+- Confirm Password
+
+Checkbox:
+
+"I agree to the Terms & Conditions and Privacy Policy."
+
+Button:
+
+"Create My Account"
+
+### Forgot Password
+
+Heading:
+
+"Let's Get You Back to Your Account."
+
+Description:
+
+"Forgot your password? Don't worry. Enter the email address associated with your account and follow the instructions to securely reset your password."
+
+Field:
+
+Registered Email Address
+
+Button:
+
+"Send Reset Link"
+
+---
+
+## 17. MY PROFILE PAGE
+
+Heading:
+
+"Your Account, Your Coffee Preferences."
+
+Description:
+
+"Manage your personal details and keep your AR Coffee Shop account up to date. From your contact information to your order history, everything you need is available in one place."
+
+### Personal Information
+
+- Full Name
+- Email
+- Mobile Number
+- Profile Picture
+
+### Account Settings
+
+- Change Password
+- Update Contact Details
+- Notification Preferences
+
+### My Activity
+
+- Total Orders
+- Recent Orders
+- Reviews Submitted
+
+### Account Actions
+
+- Save Changes
+- Sign Out
+- Delete Account
+
+---
+
+# PART B – OWNER PORTAL
+
+## 18. OWNER PORTAL OVERVIEW
+
+Create a separate, secure and professional owner dashboard.
+
+The Owner Portal must be accessible through a separate route such as:
+
+/owner/login
+
+After successful authentication, redirect the owner to:
+
+/owner/dashboard
+
+Do not allow customers to access owner pages.
+
+The owner must be able to manage the complete business through this portal.
+
+## 19. OWNER LOGIN PAGE
+
+Heading:
+
+"Welcome Back, Owner."
+
+Subtitle:
+
+"Your coffee shop, your business, your control. Sign in to manage daily operations, monitor orders, update your menu and keep everything running smoothly."
+
+Fields:
+
+- Email Address
+- Password
+- Show / Hide Password
+- Remember Me
+- Forgot Password
+
+Button:
+
+"Sign In to Dashboard"
+
+Supporting Text:
+
+"Access is restricted to authorised AR Coffee Shop management accounts."
+
+---
+
+## 20. OWNER DASHBOARD
+
+Create a premium management dashboard.
+
+Use a fixed sidebar, top navigation, statistics cards, data tables and analytics charts.
+
+### Sidebar Navigation
+
+Overview:
+- Dashboard
+
+Menu Management:
+- Products
+- Categories
+
+Order Management:
+- All Orders
+- Order Details
+
+Customer Management:
+- Customers
+
+Marketing:
+- Offers & Coupons
+
+Feedback:
+- Reviews & Ratings
+
+Business Insights:
+- Sales Analytics
+- Reports
+
+Configuration:
+- Shop Settings
+- Owner Profile
+- Notifications
+- Logout
+
+### Dashboard Welcome Section
+
+Heading:
+
+"Good Morning, Welcome to AR Coffee Shop!"
+
+Subtitle:
+
+"Here's what's happening at your coffee shop today. Monitor your sales, manage incoming orders, track your menu performance and stay updated with your business activities."
+
+### Statistics Cards
+
+1. Total Revenue
+
+"Track the total revenue generated by your coffee shop within the selected period."
+
+2. Total Orders
+
+"Monitor how many orders your coffee shop has received today or during your selected date range."
+
+3. Total Customers
+
+"View the number of registered customers who have interacted with your coffee shop."
+
+4. Average Order Value
+
+"Understand how much customers typically spend on each order."
+
+Show percentage changes compared with the previous period.
+
+### Revenue Performance
+
+Heading:
+
+"Revenue Performance"
+
+Description:
+
+"Understand how your business is performing through a visual overview of revenue generated over time. Compare daily, weekly and monthly sales to identify patterns and make better business decisions."
+
+Filters:
+
+- Today
+- Last 7 Days
+- Last 30 Days
+- This Month
+- Custom Date Range
+
+Charts:
+
+- Revenue Trend: Line Chart
+- Orders by Day: Bar Chart
+- Sales by Category: Doughnut Chart
+
+### Recent Orders
+
+Heading:
+
+"Recent Orders"
+
+Description:
+
+"Stay updated with the latest customer orders. Review incoming requests, check preparation progress and quickly access order details."
+
+Table Columns:
+
+- Order ID
+- Customer
+- Order Type
+- Amount
+- Status
+- Date
+- Actions
+
+Button:
+
+"View All Orders"
+
+### Best-Selling Products
+
+Heading:
+
+"Best-Selling Products"
+
+Description:
+
+"Discover which coffee and food items are performing the best. Use these insights to understand customer preferences and make better menu decisions."
+
+Display:
+
+- Product Image
+- Product Name
+- Units Sold
+- Revenue Generated
+- Availability
+
+### Quick Actions
+
+- Add New Product
+- Manage Menu
+- View New Orders
+- Create Offer
+- View Customer Reviews
+- Download Sales Report
+
+### Recent Activity
+
+Show notifications such as:
+
+"A new order has been received."
+
+"A customer has submitted a new review."
+
+"Your Weekend Treat offer is about to expire."
+
+---
+
+## 21. PRODUCT MANAGEMENT PAGE
+
+Heading:
+
+"Manage Your Menu"
+
+Description:
+
+"Your menu is the heart of AR Coffee Shop. Manage every product in one place, update prices, upload attractive product images, introduce new flavours and control which items are visible to customers."
+
+### Product Statistics
+
+- Total Products
+- Available Products
+- Unavailable Products
+- Total Categories
+
+### Product Table
+
+Columns:
+
+- Product Image
+- Product Name
+- Category
+- Price
+- Availability
+- Featured Status
+- Actions
+
+Actions:
+
+- View
+- Edit
+- Delete
+- Toggle Availability
+
+### Add New Product
+
+Heading:
+
+"Introduce Something New"
+
+Description:
+
+"Add a new beverage or food item to your coffee shop menu. Provide clear product information, upload an attractive image and set the selling price so customers can easily discover it."
+
+Fields:
+
+1. Product Name
+2. Product Description
+3. Product Image Upload
+4. Category
+5. Selling Price
+6. Ingredients
+7. Preparation Time
+8. Customisation Options
+9. Product Availability
+10. Featured Product Toggle
+
+Button:
+
+"Publish Product"
+
+### Edit Product
+
+Heading:
+
+"Update Product Information"
+
+Description:
+
+"Keep your menu accurate and up to date. Modify product names, descriptions, images, prices and availability whenever necessary. Changes should automatically appear on the customer website after saving."
+
+Buttons:
+
+- Save Changes
+- Cancel
+- Delete Product
+
+### Availability Options
+
+- Available
+- Temporarily Unavailable
+- Out of Stock
+- Hidden from Menu
+
+Empty State:
+
+"No products have been added yet. Start building your menu by adding your first coffee, beverage or snack."
+
+Button:
+
+"Add Your First Product"
+
+IMPORTANT:
+Every product operation must update the database. The customer portal must retrieve the updated product information automatically.
+
+---
+
+## 22. CATEGORY MANAGEMENT PAGE
+
+Heading:
+
+"Organise Your Menu"
+
+Description:
+
+"Create a well-organised menu that makes it easier for customers to discover their favourite drinks and food items. Add new categories, update existing ones and arrange products according to your coffee shop's offerings."
+
+Initial Categories:
+
+- Hot Coffee
+- Cold Coffee
+- Speciality Coffee
+- Tea & Refreshments
+- Snacks & Bites
+- Desserts
+
+Each category card should display:
+
+- Category Name
+- Category Image
+- Short Description
+- Number of Products
+- Visibility Status
+
+### Add Category
+
+Heading:
+
+"Create a New Category"
+
+Fields:
+
+- Category Name
+- Category Description
+- Category Image
+- Display Order
+- Category Status
+
+Button:
+
+"Create Category"
+
+### Edit Category
+
+"Update the category details to keep your menu organised. Changes to categories should be reflected automatically in the customer menu."
+
+Actions:
+
+- Edit
+- Delete
+- Activate / Deactivate
+
+Empty State:
+
+"No categories available. Create your first category to organise your products."
+
+---
+
+## 23. ORDER MANAGEMENT PAGE
+
+Heading:
+
+"Manage Customer Orders"
+
+Description:
+
+"Keep every customer order organised and moving smoothly. View new orders, confirm requests, monitor preparation progress and update order statuses to keep customers informed at every stage."
+
+### Order Statistics
+
+- Total Orders
+- New Orders
+- Preparing Orders
+- Ready for Pickup / Serving
+- Completed Orders
+- Cancelled Orders
+
+### Filters
+
+- All Orders
+- New
+- Accepted
+- Preparing
+- Ready
+- Completed
+- Cancelled
+
+Additional Filters:
+
+- Order ID
+- Customer Name
+- Order Type
+- Date Range
+- Payment Status
+
+### Order Table
+
+Columns:
+
+- Order ID
+- Customer Name
+- Order Type
+- Amount
+- Payment Status
+- Order Status
+- Order Date
+- Actions
+
+### Order Actions
+
+- View Order Details
+- Accept Order
+- Reject Order with Reason
+- Start Preparing
+- Mark as Ready
+- Mark as Completed
+- Cancel Order
+
+New Order Notification:
+
+"New Order Received! A customer has just placed an order at AR Coffee Shop. Review the order details and accept it to begin processing."
+
+---
+
+## 24. ORDER DETAILS PAGE
+
+Heading:
+
+"Order Information"
+
+Description:
+
+"Review the complete details of this customer order, including the selected products, customisations, payment information and current preparation status."
+
+Display:
+
+- Order ID
+- Order Date and Time
+- Customer Name
+- Customer Email
+- Customer Phone
+- Order Type
+- Payment Method
+- Payment Status
+- Order Status
+
+### Ordered Products
+
+Display:
+
+- Product Name
+- Quantity
+- Unit Price
+- Customisations
+- Total
+
+### Payment Summary
+
+- Subtotal
+- Discount
+- Taxes
+- Total Amount
+
+### Update Order Progress
+
+Available Statuses:
+
+1. Pending
+2. Accepted
+3. Preparing
+4. Ready for Pickup / Served
+5. Completed
+6. Cancelled
+
+Button:
+
+"Update Order Status"
+
+### Internal Notes
+
+"Add internal notes to help staff coordinate the preparation and handling of this order. These notes are for management use and should not be displayed to customers."
+
+Every status update must be stored in the database and reflected in the customer's order tracking page.
+
+---
+
+## 25. CUSTOMER MANAGEMENT PAGE
+
+Heading:
+
+"Our Coffee Community"
+
+Description:
+
+"Get a better understanding of your customer community. View registered customers, access their basic account information and understand their ordering activity to deliver a more personalised experience."
+
+### Customer Statistics
+
+- Total Registered Customers
+- New Customers
+- Active Customers
+- Returning Customers
+
+### Customer Table
+
+Columns:
+
+- Customer Name
+- Email Address
+- Mobile Number
+- Total Orders
+- Total Spending
+- Registration Date
+- Account Status
+
+### Customer Details
+
+Heading:
+
+"Customer Profile"
+
+Display:
+
+- Customer Name
+- Profile Picture
+- Email
+- Phone Number
+- Account Created Date
+- Total Orders
+- Total Spending
+- Recent Orders
+- Customer Reviews
+
+Only authorised management accounts should access customer information.
+
+Never display customer passwords.
+
+---
+
+## 26. OFFERS AND COUPON MANAGEMENT PAGE
+
+Heading:
+
+"Create Offers That Bring Customers Back"
+
+Description:
+
+"Give customers more reasons to enjoy AR Coffee Shop. Create special promotions, introduce discount coupons and highlight seasonal offers to encourage more orders and reward customer loyalty."
+
+### Offer Statistics
+
+- Total Offers
+- Active Offers
+- Scheduled Offers
+- Expired Offers
+
+### Create New Promotion
+
+Heading:
+
+"Create a New Promotion"
+
+Description:
+
+"Design a promotion that suits your business goals. Choose the offer type, configure its discount, define its validity period and publish it for customers to discover."
+
+Fields:
+
+- Offer Title
+- Offer Description
+- Offer Banner Image
+- Offer Type
+- Discount Percentage
+- Fixed Discount Amount
+- Coupon Code
+- Minimum Order Value
+- Maximum Discount
+- Start Date
+- Expiry Date
+- Usage Limit
+- Applicable Products
+- Applicable Categories
+- Offer Status
+
+### Offer Types
+
+- Percentage Discount
+- Flat Discount
+- Product-Specific Offer
+- Combo Offer
+- Limited-Time Promotion
+
+Sample Offer:
+
+Coffee Break Special
+
+"Enjoy a special discount on selected beverages and make your everyday coffee break even better."
+
+Coupon Code: COFFEE10
+
+Button:
+
+"Publish Offer"
+
+### Offer Actions
+
+- Edit Offer
+- Activate / Deactivate
+- Delete Offer
+- View Usage Statistics
+
+---
+
+## 27. REVIEWS AND RATINGS MANAGEMENT PAGE
+
+Heading:
+
+"Customer Feedback & Experiences"
+
+Description:
+
+"Every review gives us an opportunity to improve. Explore customer feedback, understand their experiences and identify what makes AR Coffee Shop special."
+
+### Review Statistics
+
+- Total Reviews
+- Average Rating
+- 5-Star Reviews
+- Recent Reviews
+
+### Rating Distribution
+
+Display a chart showing:
+
+- 5 Stars
+- 4 Stars
+- 3 Stars
+- 2 Stars
+- 1 Star
+
+### Review Cards
+
+Each review must display:
+
+- Customer Name
+- Product Name
+- Star Rating
+- Review Title
+- Review Description
+- Review Date
+
+### Management Actions
+
+- View Full Review
+- Reply to Review
+- Hide Inappropriate Review
+- Report Review
+
+Sample Owner Response:
+
+"Thank you for sharing your experience with AR Coffee Shop! We're glad you enjoyed your visit. Your feedback motivates our team to continue serving great coffee and providing excellent service."
+
+---
+
+## 28. SALES ANALYTICS AND REPORTS PAGE
+
+Heading:
+
+"Understand Your Business Performance"
+
+Description:
+
+"Make informed business decisions with clear insights into your coffee shop's performance. Track revenue, analyse order trends, identify popular products and understand customer purchasing behaviour."
+
+### Revenue Analytics
+
+Heading:
+
+"Revenue Overview"
+
+Display:
+
+- Total Revenue
+- Gross Sales
+- Discounts
+- Taxes
+- Net Sales
+
+Filters:
+
+- Daily
+- Weekly
+- Monthly
+- Yearly
+- Custom Date Range
+
+### Order Analytics
+
+Heading:
+
+"Order Performance"
+
+Description:
+
+"Monitor how many orders your coffee shop receives and understand the distribution of completed, pending and cancelled orders."
+
+Display:
+
+- Total Orders
+- Completed Orders
+- Cancelled Orders
+- Average Order Value
+
+### Popular Products
+
+Heading:
+
+"What Customers Love Most"
+
+"Identify your best-performing menu items based on the number of units sold and revenue generated."
+
+### Category Performance
+
+Heading:
+
+"Sales by Category"
+
+"Understand which menu categories contribute most to your overall sales."
+
+### Download Reports
+
+Heading:
+
+"Your Business Reports"
+
+Description:
+
+"Download organised reports to review your business activities, maintain records and plan future improvements."
+
+Buttons:
+
+- Download Daily Report
+- Download Monthly Report
+- Export Orders to CSV
+- Export Sales Summary
+
+All reports must use actual database records.
+
+---
+
+## 29. SHOP SETTINGS PAGE
+
+Heading:
+
+"Manage Your Coffee Shop"
+
+Description:
+
+"Keep your business information accurate and your online shop running smoothly. Update your shop details, configure operating hours and manage the settings that control the customer experience."
+
+### Business Information
+
+Fields:
+
+- Coffee Shop Name
+- Shop Logo
+- Business Description
+- Contact Number
+- Business Email
+- Shop Address
+- Location / Map Link
+
+### Operating Hours
+
+Heading:
+
+"When We're Open"
+
+Description:
+
+"Set your coffee shop's operating schedule so customers know when they can visit or place an order."
+
+Provide editable opening and closing hours for:
+
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
+- Sunday
+
+Allow individual days to be marked closed.
+
+Use these sample times only until the owner configures actual hours:
+
+Monday to Friday: 9 AM – 9 PM
+
+Saturday and Sunday: 9 AM – 10 PM
+
+### Ordering Settings
+
+- Enable / Disable Online Ordering
+- Enable / Disable Dine-in
+- Enable / Disable Takeaway
+- Temporarily Close Online Orders
+- Minimum Order Amount
+- Preparation Time Settings
+
+### Payment Settings
+
+- Enable UPI Payments
+- Enable Card Payments
+- Enable Cash Payments
+- Configure Payment Instructions
+
+Only enable payment methods supported by the payment gateway and actual business operations.
+
+### Notification Settings
+
+- New Order Notifications
+- Order Status Notifications
+- New Customer Notifications
+- New Review Notifications
+
+Button:
+
+"Save Shop Settings"
+
+---
+
+## 30. OWNER PROFILE AND SECURITY PAGE
+
+Heading:
+
+"Your Management Account"
+
+Description:
+
+"Manage your account information and keep your management access secure. Update your personal details and review your account settings whenever needed."
+
+### Profile Information
+
+- Owner Name
+- Email Address
+- Mobile Number
+- Profile Picture
+
+### Security Settings
+
+- Change Password
+- Confirm New Password
+- Two-Factor Authentication (if supported)
+- Active Sessions (if supported)
+- Last Login Information
+
+Buttons:
+
+- Save Changes
+- Change Password
+- Sign Out
+
+---
+
+## 31. OWNER NOTIFICATIONS PAGE
+
+Heading:
+
+"Stay Updated With Your Business"
+
+Description:
+
+"Keep track of important activities happening at AR Coffee Shop. View new order alerts, customer feedback, offer updates and other important business notifications in one convenient place."
+
+Sample Notifications:
+
+New Order Received:
+
+"A new customer order has been received. Review the order details and start processing."
+
+New Customer Review:
+
+"A customer has submitted a new 5-star review. Visit the reviews section to read their feedback."
+
+Offer Expiring Soon:
+
+"Your Coffee Break Special promotion is approaching its expiry date. Review the offer details."
+
+Actions:
+
+- Mark as Read
+- Mark All as Read
+- Delete Notification
+- View Related Order
+- View Customer Review
+
+---
+
+# PART C – SHARED SYSTEM CONTENT
+
+## 32. CUSTOMER SYSTEM MESSAGES
+
+Login Success:
+"Welcome back! You're successfully signed in."
+
+Registration Success:
+"Your AR Coffee Shop account has been created successfully."
+
+Product Added:
+"Your favourite has been added to your cart."
+
+Cart Updated:
+"Your cart has been updated successfully."
+
+Coupon Applied:
+"Great! Your discount has been applied."
+
+Order Placed:
+"Your order has been placed successfully."
+
+Payment Success:
+"Your payment has been completed successfully."
+
+Payment Failure:
+"We couldn't complete your payment. Please try again."
+
+Review Submitted:
+"Thank you! Your feedback has been submitted."
+
+Profile Updated:
+"Your account information has been updated."
+
+Network Error:
+"Something went wrong. Please check your connection and try again."
+
+## 33. OWNER SYSTEM MESSAGES
+
+Product Created:
+"Your new product has been added successfully."
+
+Product Updated:
+"Product information has been updated."
+
+Product Deleted:
+"The selected product has been removed from your menu."
+
+Category Created:
+"Your new category is ready."
+
+Order Accepted:
+"The order has been accepted successfully."
+
+Order Updated:
+"The customer order status has been updated."
+
+Offer Created:
+"Your new promotion has been published."
+
+Offer Expired:
+"This offer has expired and is no longer active."
+
+Settings Saved:
+"Your shop settings have been saved successfully."
+
+Report Generated:
+"Your report is ready to download."
+
+Review Hidden:
+"The selected review is no longer publicly visible."
+
+---
+
+# PART D – FUNCTIONAL REQUIREMENTS
+
+## 34. CUSTOMER AND OWNER INTEGRATION
+
+Both portals must share a common backend and database.
+
+### Dynamic Menu Workflow
+
+1. Owner signs into the Owner Portal.
+2. Owner opens Product Management.
+3. Owner adds a product called Hazelnut Latte.
+4. Owner uploads an image, adds a description and sets a price.
+5. Owner publishes the product.
+6. Product information is saved in the database.
+7. Customer Portal fetches the updated menu.
+8. Customers can now see and order Hazelnut Latte.
+
+### Order Management Workflow
+
+1. Customer selects products.
+2. Customer adds products to the cart.
+3. Customer chooses Dine-in or Takeaway.
+4. Customer confirms the order.
+5. Order is saved in the database.
+6. Owner receives a new order notification.
+7. Owner accepts and prepares the order.
+8. Owner updates the order status.
+9. Customer sees the latest status on the tracking page.
+
+### Offer Management Workflow
+
+1. Owner creates a new promotion.
+2. Owner configures its discount and validity.
+3. Offer is saved in the database.
+4. Customer Portal displays the active offer.
+5. Customer applies a valid coupon.
+6. Backend validates the coupon and recalculates the order total.
+
+### Review Workflow
+
+1. Customer completes an eligible order.
+2. Customer submits a rating and review.
+3. Review is saved in the database.
+4. Owner views the review.
+5. Owner can respond or moderate inappropriate content.
+6. Approved reviews appear on the customer website.
+
+---
+
+# PART E – DATABASE AND TECHNICAL REQUIREMENTS
+
+## 35. SUGGESTED DATABASE STRUCTURE
+
+Create a database with the following main entities:
+
+1. Users
+2. Owner Accounts
+3. Categories
+4. Products
+5. Product Customisations
+6. Orders
+7. Order Items
+8. Payments
+9. Coupons
+10. Offers
+11. Reviews
+12. Notifications
+13. Shop Settings
+14. Business Hours
+15. Order Status History
+
+Use proper primary keys, foreign keys, relationships, validation and timestamps.
+
+Suggested relationships:
+
+- One customer can place multiple orders.
+- One order can contain multiple order items.
+- One product belongs to a category.
+- One category can contain multiple products.
+- One customer can submit multiple eligible reviews.
+- One offer can apply to multiple products or categories.
+- One order has a separate payment record.
+- One order can have multiple status history records.
+
+## 36. AUTHENTICATION AND SECURITY
+
+Implement:
+
+- Secure customer registration and login.
+- Separate owner login.
+- Role-based access control.
+- Password hashing.
+- Protected owner routes.
+- Server-side validation.
+- Secure session handling.
+- Input sanitisation.
+- Database access restrictions.
+- Protection against unauthorised order updates.
+- Proper error handling.
+
+Customers must never gain owner privileges by changing a frontend role or modifying browser data.
+
+Only authorised owner accounts can access management functionality.
+
+## 37. PAYMENT REQUIREMENTS
+
+Support configurable payment methods:
+
+- UPI
+- Debit / Credit Cards
+- Cash
+
+Payment requirements:
+
+- Use a suitable payment gateway for online payments.
+- Never store raw card details.
+- Verify payment status on the backend.
+- Do not mark an online payment successful based only on frontend confirmation.
+- Support cash payment status tracking.
+- Maintain payment records separately from order status.
+- Ensure totals and discounts are calculated securely on the server.
+
+## 38. RESPONSIVE DESIGN
+
+The entire website must work properly on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Customer Portal:
+
+Use a responsive navigation bar, mobile-friendly product grids and a simple mobile checkout.
+
+Owner Portal:
+
+Use a collapsible sidebar, responsive data tables, mobile-friendly statistics cards and accessible action buttons.
+
+Do not simply shrink the desktop interface. Design appropriate mobile layouts.
+
+---
+
+# PART F – USER EXPERIENCE REQUIREMENTS
+
+## 39. LOADING STATES
+
+Use professional loading indicators when:
+
+- Loading products.
+- Fetching customer orders.
+- Loading dashboard analytics.
+- Submitting checkout.
+- Updating order status.
+- Generating reports.
+
+## 40. EMPTY STATES
+
+Customer Menu:
+
+"We couldn't find any items matching your search. Try a different name or explore another category."
+
+Customer Cart:
+
+"Your cart is waiting for something delicious. Explore our menu and add your favourites."
+
+Customer Orders:
+
+"No orders yet! Your next favourite coffee experience is waiting."
+
+Customer Reviews:
+
+"Be the first to share your experience with AR Coffee Shop."
+
+Owner Products:
+
+"No products have been added yet. Start building your menu."
+
+Owner Orders:
+
+"No orders found for the selected filters."
+
+Owner Notifications:
+
+"You're all caught up! New business notifications will appear here whenever there's an important update."
+
+## 41. ERROR HANDLING
+
+Provide clear messages for:
+
+- Failed login
+- Invalid registration
+- Incorrect password
+- Network failure
+- Failed payment
+- Invalid coupon
+- Unavailable product
+- Out-of-stock product
+- Invalid order
+- Failed image upload
+- Server error
+
+Never expose internal error messages, passwords or sensitive server information to customers.
+
+---
+
+# PART G – FINAL DESIGN EXPECTATIONS
+
+## 42. CUSTOMER PORTAL VISUAL DIRECTION
+
+The customer website must feel like an elegant premium coffee brand.
+
+Prioritise:
+
+- Large coffee photography.
+- Editorial-style homepage.
+- Beautiful product cards.
+- Attractive category navigation.
+- Premium menu layout.
+- Clear product pricing.
+- Simple cart and checkout.
+- Elegant typography.
+- Warm colour palette.
+- Smooth user experience.
+
+## 43. OWNER PORTAL VISUAL DIRECTION
+
+The owner dashboard must feel like a professional business management application.
+
+Prioritise:
+
+- Sidebar navigation.
+- Dashboard statistics.
+- Interactive charts.
+- Clear data tables.
+- Product management forms.
+- Order status controls.
+- Customer management.
+- Promotion management.
+- Review moderation.
+- Sales reports.
+- Business settings.
+
+Keep the same brand colours and typography but use a more functional and information-focused layout.
+
+## 44. FINAL INSTRUCTIONS
+
+Create the complete AR Coffee Shop website with both portals.
+
+Important instructions:
+
+1. Do not create only a landing page.
+2. Do not skip any of the requested pages.
+3. Do not use generic placeholder content where the provided copy is available.
+4. Maintain consistent branding across both portals.
+5. Use realistic coffee photography.
+6. Build reusable UI components.
+7. Make all navigation links functional.
+8. Make all buttons perform their intended actions.
+9. Make the menu completely dynamic.
+10. Connect customer and owner portals to the same database.
+11. Implement actual authentication and authorisation.
+12. Implement working cart and checkout functionality.
+13. Implement real order tracking based on owner updates.
+14. Implement working offer and coupon validation.
+15. Implement customer reviews and owner moderation.
+16. Implement analytics using actual order and payment records.
+17. Include responsive desktop, tablet and mobile layouts.
+18. Include loading, empty, success and error states.
+19. Never invent the physical shop address, phone number, email or operating hours.
+20. Keep sample menu prices editable through the Owner Portal.
+
+The final result should look and function like a real premium coffee shop platform, not a static design prototype.
+
+**Project Name: AR Coffee Shop**
+
+**Brand Tagline: Every Cup Has a Story. Make Yours Special.**
+
+**Final Goal: Create a premium customer ordering experience and a powerful owner management dashboard connected through one shared business system.**

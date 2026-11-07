@@ -1,0 +1,8 @@
+Act as professional full stack developer.
+
+you are going to create a frontend and backend for my UI design.
+use frontend for HTML,CSS,JS.
+use backend for JAVA.
+use database for MYSQL.
+turn my stitch design into live website without changing UI.
+

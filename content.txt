@@ -1,0 +1,463 @@
+================================================================================
+☕ COFFEE & MORE — WEBSITE COPY & INTERACTIVE UI CONTENT DECK
+================================================================================
+Target Audience : Airport travelers, transit passengers, flight crews, visitors
+Brand Tone      : Warm, welcoming, modern, energetic, reassuring & travel-friendly
+Color Palette   : Roasted espresso brown (#2C1810), Warm Latte Cream (#F5EBE1), 
+                  Golden Caramel (#C68B59), Deep Charcoal & Crisp White
+UI Style        : Animated, mobile-first, tactile micro-interactions, clean cards
+================================================================================
+
+
+/* ==========================================================================
+   0. FLOATING TOP ANNOUNCEMENT BAR & GLOBAL STATUS
+   ========================================================================== */
+
+[Live Airport Status Ticker / Animated Marquee]
+• Text Variations (Rotating every 5 seconds with slide-in animation):
+  1. "✈️ Flying out of Chennai? Recharge with freshly brewed coffee & warm bakes!"
+  2. "🕒 Open Daily: 6:00 AM – 10:00 PM at Kamaraj Domestic Airport"
+  3. "⚡ In a rush for boarding? Grab our express coffee & sandwich to go in 3 mins!"
+  4. "✨ Great taste, great value — Cozy dining for two starting at ~₹350"
+
+[Live Operational Badge]
+• Status: "🟢 Open Now | Serving Fresh Till 10:00 PM"
+
+
+/* ==========================================================================
+   1. NAVIGATION HEADER (STICKY / BLURRED GLASSMORPHISM)
+   ========================================================================== */
+
+[Logo & Wordmark]
+• Brand Name: Coffee & More
+• Tagline: "Brews, Bites & Warm Delights"
+
+[Navigation Menu Items]
+• Home
+• About Us
+• Menu
+• Why Travelers Love Us
+• Gallery
+• Location & Hours
+• Contact
+
+[Header Micro-CTA Buttons]
+• Primary Action: "View Menu ☕"
+• Quick Direction: "Directions 📍"
+
+
+/* ==========================================================================
+   2. HERO SECTION (INTERACTIVE & ANIMATED)
+   ========================================================================== */
+
+[Main Headline]
+"Your Cozy Pause Before the Skies."
+
+[Animated Subheadline (Typing / Fade-up Animation)]
+"Freshly roasted coffee, oven-warm bakes, and gourmet sandwiches — crafted right at Chennai Domestic Airport to make every journey delicious."
+
+[Call To Action (CTA) Group]
+• Primary Button: "Explore Our Menu 🥐" 
+  (Hover Effect: Smooth scale-up with steam ripple animation)
+• Secondary Button: "Get Directions (Google Maps) 📍" 
+  (Action: Opens Google Maps pinned to Kamaraj Domestic Airport)
+
+[Hero Floating Micro-Cards / Glassmorphism Badges]
+(Float gently with parallax tilt effect on desktop; swipeable chips on mobile)
+• Badge 1: 
+  - Icon: ☕
+  - Title: "100% Freshly Ground"
+  - Sub: "Artisanal espresso & brews"
+• Badge 2: 
+  - Icon: ⏳
+  - Title: "Express Counter"
+  - Sub: "Ready before your gate opens"
+• Badge 3: 
+  - Icon: 💰
+  - Title: "Pocket-Friendly Comfort"
+  - Sub: "Avg. spend ~₹350 for two"
+• Badge 4: 
+  - Icon: 🌟
+  - Title: "4.8 / 5 Rating"
+  - Sub: "Loved by 10,000+ travelers"
+
+
+/* ==========================================================================
+   3. VALUE PROPOSITION: "WHY STOP AT COFFEE & MORE?"
+   (Interactive 4-Card Grid with Hover Elevation & Micro-Lottie Icons)
+   ========================================================================== */
+
+Card 1: Freshly Brewed, Never Rushed
+• Headline: "Artisanal Coffee & Teas"
+• Body: "Whether you need a rich double-shot espresso to catch a dawn flight or a calming ginger tea after landing, our barista crafts each cup with care."
+
+Card 2: Freshly Baked Every Morning
+• Headline: "Oven-Warm Pastries & Muffins"
+• Body: "Buttery croissants, melt-in-the-mouth blueberry muffins, and warm desserts baked to sweet perfection every single day."
+
+Card 3: Made for the Modern Traveler
+• Headline: "Fast Grab & Go or Relaxed Seating"
+• Body: "Tight layover? Pick up a sealed grab-and-go snack. Have spare time? Unwind in our cozy seating with handy charging spots."
+
+Card 4: Honest Airport Value
+• Headline: "Premium Taste, Friendly Prices"
+• Body: "Airport dining without the sticker shock. Enjoy fulfilling snacks, sandwiches, and treats at a relaxed budget (~₹350 for two)."
+
+
+/* ==========================================================================
+   4. ABOUT US SECTION: "THE COFFEE & MORE STORY"
+   ========================================================================== */
+
+[Badge / Section Overline]
+"HELLO FROM MEENAMBAKKAM"
+
+[Section Title]
+"The Warmest Stop at Kamaraj Domestic Airport"
+
+[Story Copy]
+"Airports are full of rushed steps, gate announcements, and hurried goodbyes. At Coffee & More, we built a sanctuary where travelers can press pause.
+
+Located right inside the bustling Kamaraj Domestic Airport on GST Road, we bring together the aroma of freshly ground coffee beans, the comforting warmth of toasted gourmet sandwiches, and a bakery counter filled with fresh pastries and muffins.
+
+Whether you're stepping off an early morning flight, waiting through a transit delay, or meeting loved ones at arrivals, our welcoming corner offers a moment of pure comfort. Pull up a chair, plug in your phone, take a deep sip, and let the travel rush fade away."
+
+[Interactive Milestone / Stat Counters]
+(Counter rolls up when scrolled into view)
+• Stat 1: "6:00 AM – 10:00 PM" -> Open 7 Days a Week for Travelers
+• Stat 2: "25+" -> Freshly Handcrafted Menu Selections
+• Stat 3: "3 Mins" -> Average Counter Pick-up Speed
+• Stat 4: "100%" -> Vegetarian & Pure-Bake Options Available
+
+
+/* ==========================================================================
+   5. INTERACTIVE MENU SECTION
+   (Tabbed Interface with Smooth Filter Transitions & Search Bar)
+   ========================================================================== */
+
+[Section Header]
+• Overline: "CRAFTED FOR YOUR CRAVINGS"
+• Main Heading: "Sip, Crunch & Savor"
+• Subtitle: "Fresh ingredients, balanced flavors, and vegetarian-friendly options prepared fresh all day."
+
+[Interactive Category Tabs]
+[ All ]  [ ☕ Coffee ]  [ 🍵 Teas & Chai ]  [ 🥪 Sandwiches ]  [ 🥨 Savory Snacks ]  [ 🧁 Muffins & Pastries ]  [ 🍰 Desserts ]  [ 🥤 Cold Shakes & Chillers ]
+
+---
+
+[MENU CATEGORY 1: HANDCRAFTED HOT & COLD COFFEE]
+"From robust morning wake-up shots to creamy iced blends."
+
+• Signature Airport Cappuccino [🟢 Veg]
+  - Tag: Best Seller
+  - Description: "Velvety steamed milk poured over a rich double-shot espresso, finished with a dusted cocoa crown."
+  - Serving: Hot (Regular / Large)
+
+• Classic Americano [🟢 Veg]
+  - Description: "Bold, smooth, and aromatic. Premium espresso pulled over hot water for pure coffee lovers."
+  - Serving: Hot / Iced
+
+• Café Latte [🟢 Veg]
+  - Description: "Subtle espresso infused with silky microfoam milk. Mellow, smooth, and uplifting."
+  - Serving: Hot
+
+• Rich Hazelnut Café Mocha [🟢 Veg]
+  - Description: "Espresso blended with artisanal chocolate, roasted hazelnut notes, and whipped cream."
+  - Serving: Hot / Iced
+
+• Creamy Caramel Iced Frappé [🟢 Veg]
+  - Tag: Traveler Favorite
+  - Description: "Blended chilled espresso, fresh milk, and caramel drizzle topped with whipped cream."
+  - Serving: Chilled Glass
+
+---
+
+[MENU CATEGORY 2: AUTHENTIC TEAS & LOCAL BREWS]
+"Warm comfort in every single steep."
+
+• Masala Chai Special [🟢 Veg]
+  - Tag: House Special
+  - Description: "Traditional Indian milk tea infused with crushed cardamom, ginger, cloves, and cinnamon."
+  - Serving: Piping Hot
+
+• Green Tea & Lemon Honey Infusion [🟢 Veg]
+  - Description: "Antioxidant-rich whole leaf green tea with a squeeze of fresh lemon and raw honey."
+  - Serving: Steamed Cup
+
+• Classic English Breakfast Tea [🟢 Veg]
+  - Description: "Full-bodied black tea brew served with warm milk and natural sugar on the side."
+  - Serving: Hot
+
+---
+
+[MENU CATEGORY 3: ARTISAN TOASTED SANDWICHES]
+"Crusty outside, warm & wholesome inside. Ideal pre-flight fuel."
+
+• Garden Fresh Veggie & Cheese Grilled Sandwich [🟢 Veg]
+  - Tag: Top Pick
+  - Description: "Crispy grilled bread layered with crisp bell peppers, English cucumber, sweet corn, and melted mozzarella."
+  - Serving: Served with signature dip & crisp wafers
+
+• Spiced Paneer Tikka Panini [🟢 Veg]
+  - Tag: Must Try
+  - Description: "Marinated tender cottage cheese cubes tossed in tandoori spices and mint mayo, pressed on artisan bread."
+  - Serving: Warm & Toasted
+
+• Classic Herb Grilled Chicken Sandwich [🔴 Non-Veg]
+  - Description: "Juicy shredded chicken breast seasoned with rosemary, garlic emulsion, and cheddar cheese."
+  - Serving: Golden Grilled
+
+• Double Cheese & Corn Crunch Toastie [🟢 Veg]
+  - Description: "Golden sweet corn and aged cheddar cheese toasted between buttery slices with herb flakes."
+  - Serving: Fresh off the grill
+
+---
+
+[MENU CATEGORY 4: SAVORY QUICK BITES & TRAVEL SNACKS]
+"Light, crispy, and effortless to enjoy on the move."
+
+• Golden Crispy Potato Wedges [🟢 Veg]
+  - Description: "Lightly spiced potato wedges served piping hot with garlic mayo and tangy salsa dip."
+
+• Herb-Crusted Paneer / Cheese Poppers [🟢 Veg]
+  - Description: "Crunchy bite-sized poppers filled with molten spiced cheese that melts on first bite."
+
+• Baked Veggie Puff Pastry [🟢 Veg]
+  - Description: "Flaky golden puff pastry stuffed with spiced potato and vegetable filling. An airport classic."
+
+---
+
+[MENU CATEGORY 5: BAKERY, FRESH MUFFINS & PASTRIES]
+"Baked fresh daily for a golden, flaky indulgence."
+
+• Blueberry Burst Muffin [🟢 Veg Available]
+  - Tag: Freshly Baked
+  - Description: "Moist, soft vanilla sponge packed with tart wild blueberries and a delicate crumble crust."
+
+• Double Dark Chocolate Chip Muffin [🟢 Veg Available]
+  - Description: "Decadent Dutch cocoa muffin packed with rich chocolate chunks that melt in your mouth."
+
+• Golden Butter Croissant [🟢 Veg]
+  - Description: "Light, layered, and flaky French butter croissant toasted gently on request."
+
+• Cinnamon & Apple Swirl Danish [🟢 Veg]
+  - Description: "Golden puff pastry rolled with sweet spiced apple compote and warm cinnamon glaze."
+
+---
+
+[MENU CATEGORY 6: DECADENT DESSERTS & SWEET FINISHES]
+"Because every travel story deserves a sweet memory."
+
+• Warm Walnut Choco Brownie [🟢 Veg]
+  - Tag: Bestseller
+  - Description: "Fudgy dark chocolate brownie topped with toasted walnuts. Served warm with chocolate drizzle."
+
+• New York Style Cream Cheesecake [🟢 Veg]
+  - Description: "Smooth, velvety cream cheese on a crunchy graham cracker crust with berry glaze."
+
+• Chocolate Truffle Slice [🟢 Veg]
+  - Description: "Layers of moist dark sponge and silky chocolate ganache for true chocolate lovers."
+
+---
+
+[MENU CATEGORY 7: CHILLED BEVERAGES & REFRESHERS]
+"Beat the Chennai heat before your boarding announcement."
+
+• Chilled Mango & Mint Cooler [🟢 Veg]
+• Tangy Lime & Mint Mojito (Non-Alcoholic) [🟢 Veg]
+• Creamy Oreo Cookie Milkshake [🟢 Veg]
+• Classic Cold Brew on Rocks [🟢 Veg]
+
+[Dietary & Allergy Advisory Note]
+"ℹ️ Note: Vegetarian items are clearly marked [🟢 Veg]. Please inform our barista/counter staff of any nut or dairy allergies before placing your order."
+
+
+/* ==========================================================================
+   6. TRAVELER HIGHLIGHTS & AMENITIES
+   (Interactive Animated Carousel / Icon Badges)
+   ========================================================================== */
+
+[Section Heading]
+"Designed with Airport Travelers in Mind"
+
+• ⚡ High-Speed Charging Hubs
+  "Keep your devices at 100% before your flight with charging sockets at tables."
+• 🧳 Luggage-Friendly Seating
+  "Wide walkways and ample space right by your chair for trolleys and backpacks."
+• ⏱️ Express Flight Priority Counter
+  "Boarding within 15 minutes? Tell our cashier for instant priority packaging."
+• 🧾 Spill-Proof Travel Packaging
+  "Specially designed leak-proof cups and food trays built for airport carrying."
+• 💳 Frictionless Quick Billing
+  "Quick billing at the counter with UPI, all major cards, and cash."
+
+
+/* ==========================================================================
+   7. PHOTO GALLERY & VISUAL MOMENTS
+   (Interactive Masonry Grid with Hover Zoom & Pop-up Lightbox)
+   ========================================================================== */
+
+[Gallery Overline]
+"CAPTURING THE VIBE"
+
+[Gallery Heading]
+"A Glimpse Inside Coffee & More"
+
+[Image Descriptions & Interactive Hover Captions]
+1. Image 1 [The Barista Pour]:
+   - Hover Text: "Fresh Espresso Pulled Daily"
+   - Tag: #BaristaCraft
+2. Image 2 [The Cozy Nook]:
+   - Hover Text: "Comfortable Seating Away From Terminal Crowds"
+   - Tag: #UnwindBeforeFlying
+3. Image 3 [Freshly Baked Counter]:
+   - Hover Text: "Warm Muffins, Croissants & Pastries Every Morning"
+   - Tag: #BakeShop
+4. Image 4 [The Toastie Combo]:
+   - Hover Text: "Golden Grilled Sandwiches & Steaming Cappuccino"
+   - Tag: #TravelerFuel
+5. Image 5 [Late Night Warmth]:
+   - Hover Text: "Welcoming Transit Lights till 10:00 PM"
+   - Tag: #NightBites
+
+
+/* ==========================================================================
+   8. TRAVELER REVIEWS & SOCIAL PROOF
+   (Interactive Auto-Sliding Testimonial Cards with Rating Stars)
+   ========================================================================== */
+
+[Section Title]
+"What Travelers Are Saying"
+[Subtitle]
+"Rated 4.8 / 5 by passengers flying out of Chennai Domestic Airport"
+
+• Review 1:
+  - Rating: ⭐⭐⭐⭐⭐ (5.0)
+  - Reviewer: Priya S. — Frequent Flyer (Bengaluru – Chennai)
+  - Comment: "Coffee & More is my designated pit-stop whenever I fly out of Chennai! The cappuccino is authentic and piping hot, not like ordinary airport vending machines. The paneer sandwich was freshly made and super filling. Total bill was under ₹350. Wonderful spot!"
+  - Verified Traveler Tag: "Boarded 7:30 AM Flight"
+
+• Review 2:
+  - Rating: ⭐⭐⭐⭐⭐ (5.0)
+  - Reviewer: Karthik Narayanan — Tech Consultant
+  - Comment: "My flight had a 2-hour delay, and this cozy café made the wait painless. Found a charging point, enjoyed a warm blueberry muffin and cold coffee, and worked peacefully. Courteous staff who genuinely smile!"
+  - Verified Traveler Tag: "Transit Passenger"
+
+• Review 3:
+  - Rating: ⭐⭐⭐⭐⭐ (5.0)
+  - Reviewer: Anita & Rohan Desai — Vacationers
+  - Comment: "Finding affordable and fresh food inside an airport is usually difficult, but Coffee & More surprised us. The grilled sandwich and choco brownie are top-notch. Clean counter and fast service!"
+  - Verified Traveler Tag: "Family Traveler"
+
+
+/* ==========================================================================
+   9. LOCATION, TIMINGS & HOW TO FIND US
+   (Interactive Map Card + One-Click Directions + Copy Code)
+   ========================================================================== */
+
+[Section Overline]
+"FIND YOUR WAY TO US"
+
+[Section Heading]
+"Conveniently Located at Kamaraj Domestic Airport"
+
+[Address Details]
+• Full Address:
+  Coffee & More
+  Kamaraj Domestic Airport,
+  Grand Southern Trunk Road, Meenambakkam,
+  Pallavaram (Cantonment),
+  Tamil Nadu 600016, India.
+
+• Google Plus Code:
+  X5M8+9X Pallavaram (Contonment), Tamil Nadu
+  [Interactive UI Button: "Copy Plus Code 📋" -> "Copied to Clipboard! ✓"]
+
+• Operating Hours:
+  - Monday to Sunday: 6:00 AM – 10:00 PM
+  - Open 7 Days a Week (including holidays; festival hours may slightly vary)
+  - Late evening travelers are warmly accommodated until 10:00 PM closing.
+
+[Interactive Navigation CTA Buttons]
+• Main Button: "Open in Google Maps 🗺️"
+  (Deep link to navigate directly to Kamaraj Domestic Airport GST Road)
+• Quick Tip Pill: "📍 Located comfortably for departing and arriving passengers along GST Road."
+
+
+/* ==========================================================================
+   10. CONTACT, ENQUIRY & BULK ORDER SECTION
+   (Interactive Form with Instant Feedback)
+   ========================================================================== */
+
+[Section Heading]
+"Have a Question or Need Flight Crew / Group Pre-Packaged Bites?"
+[Subhead]
+"Drop us a message for general queries, traveler feedback, or bulk parcel inquiries."
+
+[Contact Info Cards]
+• 📍 Location: Kamaraj Domestic Airport, Meenambakkam, Chennai 600016
+• 🕒 Operating Timings: 6:00 AM – 10:00 PM Daily
+• 💬 Instant WhatsApp Connect:
+  [UI Button: "Chat with Us on WhatsApp 💬"]
+  (Quick greeting message: "Hi Coffee & More, I have an inquiry about my upcoming airport visit.")
+
+[Interactive Contact & Feedback Form Copy]
+• Field 1 Label: "Your Full Name"
+  - Placeholder: "e.g., Arvind Kumar"
+• Field 2 Label: "Mobile Number / WhatsApp"
+  - Placeholder: "+91 98765 43210"
+• Field 3 Label: "Email Address"
+  - Placeholder: "you@example.com"
+• Field 4 Label: "Reason for Inquiry"
+  - Dropdown Options:
+    * General Inquiry / Feedback
+    * Flight Crew / Bulk Snack Pre-Order
+    * Special Dietary Requirements
+    * Other Queries
+• Field 5 Label: "Your Message"
+  - Placeholder: "Tell us how we can help you make your travel smoother..."
+• Submit Button: "Send Message ✈️"
+• Instant Confirmation Microcopy: 
+  "Thank you for reaching out! Our team at the airport counter will respond shortly."
+
+
+/* ==========================================================================
+   11. MOBILE BOTTOM STICKY ACTION DOCK
+   (Appears exclusively on mobile screens for effortless airport one-thumb tap)
+   ========================================================================== */
+
+[Mobile Floating Bar Component]
+• Button 1: "📖 View Menu" (Smooth scrolls directly to the Menu Tab Section)
+• Button 2: "📍 Get Directions" (Opens Google Maps immediately)
+• Button 3: "💬 WhatsApp" (Launches fast WhatsApp chat)
+
+
+/* ==========================================================================
+   12. FOOTER SECTION
+   ========================================================================== */
+
+[Brand Column]
+• Title: Coffee & More
+• Tagline: "Brews, Bites & Warm Delights at Chennai Domestic Airport."
+• Note: "The perfect companion for every flight. Freshly brewed coffee, grilled snacks, and oven bakes served with warmth from 6:00 AM to 10:00 PM."
+
+[Quick Navigation Links]
+• Home
+• About Us
+• Full Menu & Pricing
+• Traveler Reviews
+• Airport Directions
+• Contact & Feedback
+
+[Airport Traveler Quick Info]
+• Location: Kamaraj Domestic Airport, Meenambakkam, Pallavaram, Chennai - 600016
+• Hours: Daily 6:00 AM – 10:00 PM
+• Spend Range: Approx. ₹350 for two (Budget & traveler-friendly)
+• Plus Code: X5M8+9X
+
+[Footer Bottom Bar]
+• Copyright: "© 2026 Coffee & More. All rights reserved."
+• Friendly Reminder: "Safe travels & enjoy your flight! 🛫"
+
+================================================================================
+END OF CONTENT DECK — READY FOR ANIMATED UI IMPLEMENTATION
+================================================================================

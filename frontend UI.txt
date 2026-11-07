@@ -1,0 +1,28 @@
+Act as Professional UI designer.
+
+information:
+I have uploaded my content on content.txt.
+
+just do it in home page only.
+
+You are going to create a UI animated design for the content at figma.
+in home page create animated page.I have uploaded one coffee photo.
+when I scroll it, the photo will be move it.
+you are going to make this image into video for creating website.
+
+when I scroll it each coffee beans should be rotate.
+coffee in cup will be moving.
+coffee cup will be rotate
+coffee under plate is will be ratate.
+
+don't change image or image angle.
+just do what i told.
+just all object should move when i scroll it in website.
+animated image should be fix properly in home page. if its not fix it properly,you edit the video and fix it.
+
+output:
+design should be animated.
+don't forget any content from that txt file.
+don't create a any unwanted ,unlooping and unusable stuffs in UI design like button without working,...
+
+if you need any requirement stop the task and ask me.

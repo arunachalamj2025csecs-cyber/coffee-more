@@ -1,0 +1,10 @@
+# Byte-compiled / binary files
+backend/bin/
+*.class
+
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db
+test.txt
+test_tool.txt
